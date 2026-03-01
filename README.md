@@ -8,9 +8,16 @@
 
 ---
 
-## Screenshot
+## Screenshots
 
-![CareerInk Landing Page](docs/screenshot.png)
+### Landing Page
+![CareerInk Landing Page](docs/screenshot_1_landing.png)
+
+### Step 1 — CV Analysis (Agent 1)
+![CV Input](docs/screenshot_2_cv.png)
+
+### Step 2 — Psychological Assessment (Agent 1)
+![48-Question Assessment](docs/screenshot_3_assessment.png)
 
 ---
 
@@ -57,8 +64,78 @@ careerink/
 │       └── deploy_ai.py         # Deploy AI / Claude API client
 ├── frontend/
 │   └── index.html               # Full single-page frontend
+├── docs/                        # Screenshots
 ├── requirements.txt
 └── .gitignore
+```
+
+---
+
+## Setup & Installation
+
+### Prerequisites
+
+- Python 3.10 or higher
+- pip3
+- Git
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Thomaswu32/careerink.git
+cd careerink
+```
+
+### 2. Create a Virtual Environment (Recommended)
+
+```bash
+python3 -m venv venv
+
+# macOS / Linux
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip3 install -r requirements.txt
+```
+
+### 4. Configure Environment Variables (Optional)
+
+Create a `.env` file in the project root for Claude-powered justification sentences:
+
+```env
+CLIENT_ID=your_deploy_ai_client_id
+CLIENT_SECRET=your_deploy_ai_client_secret
+ORG_ID=your_org_id
+AUTH_URL=https://api-auth.dev.deploy.ai/oauth2/token
+API_URL=https://core-api.dev.deploy.ai
+```
+
+> Without these, the app automatically falls back to template-based justifications — all other features work normally.
+
+### 5. Run the Application
+
+```bash
+python3 -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
+```
+
+### 6. Open in Browser
+
+```
+http://localhost:8000
+```
+
+---
+
+## Running in Production (Background)
+
+```bash
+nohup python3 -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 > logs/server.log 2>&1 &
 ```
 
 ---
@@ -67,6 +144,7 @@ careerink/
 
 | Method | Endpoint | Description |
 |---|---|---|
+| `GET` | `/health` | Health check |
 | `POST` | `/api/cv/analyze` | Extract skills from CV text (min 500 chars) |
 | `GET` | `/api/assessment/questions` | Get 48 randomized assessment questions |
 | `POST` | `/api/assessment/submit` | Score assessment → build user profile |
@@ -85,37 +163,8 @@ careerink/
 | Work Style & Values Match (Holland Code) | 20% |
 | Experience & Seniority Fit | 15% |
 
-Viability filter: Skills Score ≥ 35 AND Final Score ≥ 50
-Diversity constraint: Max 2 recommendations per role family
-
----
-
-## Running Locally
-
-```bash
-# Install dependencies
-python3 -m pip install -r requirements.txt
-
-# Start server
-python3 -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
-
-# Open browser
-open http://localhost:8000
-```
-
----
-
-## Environment Variables (Optional)
-
-For Claude-generated justification sentences, add a `.env` file:
-
-```env
-CLIENT_ID=your_deploy_ai_client_id
-CLIENT_SECRET=your_deploy_ai_client_secret
-ORG_ID=your_org_id
-```
-
-Without these, the app falls back to template-based justifications.
+- **Viability filter:** Skills Score ≥ 35 AND Final Score ≥ 50
+- **Diversity constraint:** Max 2 recommendations per role family
 
 ---
 
