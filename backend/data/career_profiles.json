@@ -1,0 +1,924 @@
+[
+  {
+    "career_id": "01_AI_Machine_Learning_Engineer",
+    "role_name": "AI / Machine Learning Engineer",
+    "role_family": "Engineering",
+    "required_hard_skills": [
+      "Python",
+      "SQL",
+      "AWS",
+      "Azure",
+      "Kubernetes",
+      "Docker",
+      "AWS SageMaker",
+      "Google Vertex AI",
+      "Azure Machine Learning",
+      "TensorFlow",
+      "PyTorch",
+      "MLflow",
+      "Kubeflow",
+      "Weights & Biases",
+      "MLOps",
+      "Machine Learning",
+      "AI"
+    ],
+    "required_traits": {
+      "openness": "High",
+      "conscientiousness": "Moderate",
+      "extraversion": "High",
+      "agreeableness": "Moderate",
+      "neuroticism": "Moderate"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "Moderate",
+      "leadership_growth": "High",
+      "dynamic_environment": "Moderate"
+    },
+    "seniority_level": "Senior",
+    "avg_ramp_up_months": 12,
+    "growth_trajectory": "High",
+    "salary_range": "$120,000\u2013$150,000",
+    "description_summary": "An AI/Machine Learning Engineer designs, builds, and deploys intelligent systems that learn from data. They sit at the convergence of software engineering and data science, writing production-grade code that takes a model from a research notebook into a scalable, maintainable service that serves real users. In the next decade, as organizations embed AI into every product and workflow, this role will become one of the most strategically critical positions in any tech company.",
+    "full_text": "AI / Machine Learning Engineer IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Technical Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview An AI/Machine Learning Engineer designs, builds, and deploys intelligent systems that learn from data. They sit at the convergence of software engineering and data science, writing production-grade code that takes a model from a research notebook into a scalable, maintainable service that serves real users. In the next decade, as organizations embed AI into every product and workflow, this role will become one of the most strategically critical positions in any tech company. What the Role Involves Day-to-day work spans the full model lifecycle: collecting and cleaning training data, selecting and fine-tuning algorithms (deep learning, gradient boosting, large language models, reinforcement learning), evaluating model performance against business metrics, and deploying models as REST APIs or streaming pipelines. Engineers collaborate closely with data engineers to ensure clean data pipelines, with product managers to define success criteria, and with DevOps teams to containerize and monitor models in production. They also spend significant time on model explainability, bias auditing, and performance optimization to meet latency and cost constraints. Key Skills Required Core technical competencies include proficiency in Python and one of the major ML frameworks (PyTorch or TensorFlow/JAX), solid mathematics (linear algebra, probability, optimization), and experience with cloud ML platforms such as AWS SageMaker, Google Vertex AI, or Azure Machine Learning. Familiarity with MLOps tooling (MLflow, Kubeflow, Weights & Biases), SQL/NoSQL databases, and containerization (Docker, Kubernetes) is expected at mid-to-senior level. Soft skills\u2014especially the ability to translate ambiguous business problems into precise ML problem formulations\u2014differentiate the excellent from the average. What Kind of Person Tends to Succeed The most successful AI/ML Engineers combine intellectual curiosity about algorithms with an engineering discipline that prioritizes reliability and maintainability. They are comfortable sitting in uncertainty\u2014many experiments will fail\u2014while maintaining methodical processes to extract learnings. They read research papers and enjoy replicating results, but also know when \"good enough\" beats \"theoretically optimal.\" Strong communication skills help them persuade stakeholders that an ML solution is appropriate and explain model behavior in plain language. Career Progression Entry-level engineers typically join as ML Engineer I or Junior ML Researcher, focusing on implementing known architectures. After two to four years they advance to ML Engineer II, owning models end-to-end. Senior Engineers (five-plus years) lead cross-functional AI initiatives and mentor others. Staff and Principal Engineers set technical direction across multiple products. The fork between the individual contributor (IC) ladder (Distinguished Engineer, Fellow) and the management ladder (Engineering Manager \u2192 Director of ML \u2192 VP of AI) usually opens around the Staff level. Salary Range & Annual Growth In the United States, entry-level AI/ML Engineers earn $120,000\u2013$150,000 base salary. Mid-level professionals command $150,000\u2013$200,000, and senior/staff engineers frequently exceed $250,000 in total compensation at top-tier companies when equity is included. Globally, salaries range from $60,000\u2013$100,000 in Eastern Europe and Southeast Asia. Annual salary growth has averaged 8\u201312% year-over-year since 2020 and is expected to remain in the 7\u201310% range through 2030 as demand significantly outpaces supply. Data Sources U.S. Bureau of Labor Statistics, Occupational Outlook Handbook \u2013 Software Developers (2024) LinkedIn Emerging Jobs Report 2024 Levels.fyi \u2013 AI/ML Engineer Salary Data (2024) McKinsey Global Institute \u2013 The Economic Potential of Generative AI (2023) Stack Overflow Developer Survey 2024 Gartner Hype Cycle for Artificial Intelligence (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "An AI/Machine Learning Engineer designs, builds, and deploys intelligent systems that learn from data. They sit at the convergence of software engineering and data science, writing production-grade code that takes a model from a research notebook into a scalable, maintainable service that serves real users. In the next decade, as organizations embed AI into every product and workflow, this role will become one of the most strategically critical positions in any tech company.",
+      "what": "The most successful AI/ML Engineers combine intellectual curiosity about algorithms with an engineering discipline that prioritizes reliability and maintainability. They are comfortable sitting in uncertainty\u2014many experiments will fail\u2014while maintaining methodical processes to extract learnings. They read research papers and enjoy replicating results, but also know when \"good enough\" beats \"theoretically optimal.\" Strong communication skills help them persuade stakeholders that an ML solution is appropriate and explain model behavior in plain language.",
+      "key": "Core technical competencies include proficiency in Python and one of the major ML frameworks (PyTorch or TensorFlow/JAX), solid mathematics (linear algebra, probability, optimization), and experience with cloud ML platforms such as AWS SageMaker, Google Vertex AI, or Azure Machine Learning. Familiarity with MLOps tooling (MLflow, Kubeflow, Weights & Biases), SQL/NoSQL databases, and containerization (Docker, Kubernetes) is expected at mid-to-senior level. Soft skills\u2014especially the ability to translate ambiguous business problems into precise ML problem formulations\u2014differentiate the excellent from the average.",
+      "career": "Entry-level engineers typically join as ML Engineer I or Junior ML Researcher, focusing on implementing known architectures. After two to four years they advance to ML Engineer II, owning models end-to-end. Senior Engineers (five-plus years) lead cross-functional AI initiatives and mentor others. Staff and Principal Engineers set technical direction across multiple products. The fork between the individual contributor (IC) ladder (Distinguished Engineer, Fellow) and the management ladder (Engineering Manager \u2192 Director of ML \u2192 VP of AI) usually opens around the Staff level.",
+      "salary": "In the United States, entry-level AI/ML Engineers earn $120,000\u2013$150,000 base salary. Mid-level professionals command $150,000\u2013$200,000, and senior/staff engineers frequently exceed $250,000 in total compensation at top-tier companies when equity is included. Globally, salaries range from $60,000\u2013$100,000 in Eastern Europe and Southeast Asia. Annual salary growth has averaged 8\u201312% year-over-year since 2020 and is expected to remain in the 7\u201310% range through 2030 as demand significantly outpaces supply.",
+      "data": "U.S. Bureau of Labor Statistics, Occupational Outlook Handbook \u2013 Software Developers (2024) LinkedIn Emerging Jobs Report 2024 Levels.fyi \u2013 AI/ML Engineer Salary Data (2024) McKinsey Global Institute \u2013 The Economic Potential of Generative AI (2023) Stack Overflow Developer Survey 2024 Gartner Hype Cycle for Artificial Intelligence (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "02_Data_Scientist",
+    "role_name": "Data Scientist",
+    "role_family": "Data",
+    "required_hard_skills": [
+      "Python",
+      "SQL",
+      "R",
+      "Snowflake",
+      "BigQuery",
+      "Databricks",
+      "Power BI",
+      "Tableau",
+      "Pandas",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-learn",
+      "Data Visualization",
+      "AI",
+      "Git"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "Moderate",
+      "extraversion": "High",
+      "agreeableness": "Low",
+      "neuroticism": "High"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "High",
+      "leadership_growth": "High",
+      "dynamic_environment": "High"
+    },
+    "seniority_level": "Senior",
+    "avg_ramp_up_months": 12,
+    "growth_trajectory": "High",
+    "salary_range": "$95,000\u2013$120,000",
+    "description_summary": "Data Scientists extract actionable insights from large, complex datasets to guide business decisions. The role has evolved from primarily statistical analysis toward a hybrid discipline that includes machine learning model development, data storytelling, and strategic advisory. Over the next decade, as data volumes grow exponentially and AI becomes commoditized, Data Scientists who can contextualize findings within business strategy will be in especially high demand.",
+    "full_text": "Data Scientist IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Technical Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview Data Scientists extract actionable insights from large, complex datasets to guide business decisions. The role has evolved from primarily statistical analysis toward a hybrid discipline that includes machine learning model development, data storytelling, and strategic advisory. Over the next decade, as data volumes grow exponentially and AI becomes commoditized, Data Scientists who can contextualize findings within business strategy will be in especially high demand. What the Role Involves Responsibilities include formulating hypotheses, designing experiments (A/B tests, quasi-experiments), building predictive and prescriptive models, and communicating findings through visualizations and executive presentations. Data Scientists work with structured data (SQL databases, data warehouses) and unstructured data (text, images, sensor streams). They frequently collaborate with product teams to define KPIs, with engineers to productionize models, and with business stakeholders to translate data insights into decisions. An increasing portion of the role involves working with pre-trained foundation models and prompt engineering. Key Skills Required Proficiency in Python (pandas, scikit-learn, statsmodels) and R, strong SQL skills, and experience with data visualization tools (Tableau, Power BI, matplotlib/seaborn) are foundational. Statistical knowledge\u2014hypothesis testing, regression, Bayesian methods\u2014is non-negotiable. Cloud data platforms (Snowflake, BigQuery, Databricks) and version-control practices (Git) are expected. Soft skills\u2014particularly data storytelling and the ability to influence without authority\u2014are equally important; many insights die because they were not communicated compellingly. What Kind of Person Tends to Succeed Successful Data Scientists are naturally curious and skeptical, always questioning whether correlations are causal and whether sample sizes are adequate. They enjoy both the solitary, focused work of exploratory analysis and the collaborative work of presenting findings to a boardroom. Intellectual humility\u2014willingness to be wrong and to iterate\u2014is essential because data rarely tells a clean story on the first pass. Career Progression Career paths typically start as Junior / Associate Data Scientist, advancing to Data Scientist II and Senior Data Scientist. Senior professionals can move into Lead Data Scientist, Principal Data Scientist, or transition into management as Analytics Manager or Director of Data Science. Many experienced Data Scientists move into Chief Data Officer (CDO) roles or pivot to product management, given their deep understanding of user behavior data. Salary Range & Annual Growth U.S. base salaries range from $95,000\u2013$120,000 at entry level, $130,000\u2013$175,000 at mid-level, and $180,000\u2013$240,000 at senior/lead levels. Total compensation at top tech companies (FAANG+) frequently exceeds $300,000 with equity. Annual wage growth has averaged 6\u20139%, with particularly strong growth projected in financial services, healthcare, and advanced manufacturing through 2030. Data Sources U.S. Bureau of Labor Statistics, Occupational Outlook Handbook \u2013 Data Scientists (2024) Glassdoor Data Scientist Salary Report (2024) Kaggle State of Data Science Survey (2024) World Economic Forum \u2013 Future of Jobs Report (2023) Databricks State of Data + AI Report (2024) LinkedIn Workforce Insights \u2013 Data Science Trends (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "Data Scientists extract actionable insights from large, complex datasets to guide business decisions. The role has evolved from primarily statistical analysis toward a hybrid discipline that includes machine learning model development, data storytelling, and strategic advisory. Over the next decade, as data volumes grow exponentially and AI becomes commoditized, Data Scientists who can contextualize findings within business strategy will be in especially high demand.",
+      "what": "Successful Data Scientists are naturally curious and skeptical, always questioning whether correlations are causal and whether sample sizes are adequate. They enjoy both the solitary, focused work of exploratory analysis and the collaborative work of presenting findings to a boardroom. Intellectual humility\u2014willingness to be wrong and to iterate\u2014is essential because data rarely tells a clean story on the first pass.",
+      "key": "Proficiency in Python (pandas, scikit-learn, statsmodels) and R, strong SQL skills, and experience with data visualization tools (Tableau, Power BI, matplotlib/seaborn) are foundational. Statistical knowledge\u2014hypothesis testing, regression, Bayesian methods\u2014is non-negotiable. Cloud data platforms (Snowflake, BigQuery, Databricks) and version-control practices (Git) are expected. Soft skills\u2014particularly data storytelling and the ability to influence without authority\u2014are equally important; many insights die because they were not communicated compellingly.",
+      "career": "Career paths typically start as Junior / Associate Data Scientist, advancing to Data Scientist II and Senior Data Scientist. Senior professionals can move into Lead Data Scientist, Principal Data Scientist, or transition into management as Analytics Manager or Director of Data Science. Many experienced Data Scientists move into Chief Data Officer (CDO) roles or pivot to product management, given their deep understanding of user behavior data.",
+      "salary": "U.S. base salaries range from $95,000\u2013$120,000 at entry level, $130,000\u2013$175,000 at mid-level, and $180,000\u2013$240,000 at senior/lead levels. Total compensation at top tech companies (FAANG+) frequently exceeds $300,000 with equity. Annual wage growth has averaged 6\u20139%, with particularly strong growth projected in financial services, healthcare, and advanced manufacturing through 2030.",
+      "data": "U.S. Bureau of Labor Statistics, Occupational Outlook Handbook \u2013 Data Scientists (2024) Glassdoor Data Scientist Salary Report (2024) Kaggle State of Data Science Survey (2024) World Economic Forum \u2013 Future of Jobs Report (2023) Databricks State of Data + AI Report (2024) LinkedIn Workforce Insights \u2013 Data Science Trends (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "03_Cloud_Architect",
+    "role_name": "Cloud Architect",
+    "role_family": "Architecture",
+    "required_hard_skills": [
+      "AWS",
+      "Azure",
+      "GCP",
+      "Google Cloud",
+      "Kubernetes",
+      "Terraform",
+      "ECS",
+      "Infrastructure as Code",
+      "Stakeholder Management",
+      "Excel"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "Moderate",
+      "extraversion": "High",
+      "agreeableness": "Moderate",
+      "neuroticism": "Moderate"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "High",
+      "leadership_growth": "High",
+      "dynamic_environment": "High"
+    },
+    "seniority_level": "Senior",
+    "avg_ramp_up_months": 12,
+    "growth_trajectory": "High",
+    "salary_range": "$130,000\u2013$160,000",
+    "description_summary": "A Cloud Architect designs the high-level structure of cloud computing systems\u2014choosing the right mix of services, defining networking topology, establishing security boundaries, and ensuring scalability and cost-efficiency. As virtually every enterprise accelerates its cloud migration and multi-cloud strategy, architects who can design robust, cost-optimized, and secure cloud infrastructures are among the most sought-after professionals in IT.",
+    "full_text": "Cloud Architect IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Technical Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview A Cloud Architect designs the high-level structure of cloud computing systems\u2014choosing the right mix of services, defining networking topology, establishing security boundaries, and ensuring scalability and cost-efficiency. As virtually every enterprise accelerates its cloud migration and multi-cloud strategy, architects who can design robust, cost-optimized, and secure cloud infrastructures are among the most sought-after professionals in IT. What the Role Involves Cloud Architects translate business and technical requirements into cloud infrastructure blueprints. They define reference architectures, evaluate build-vs-buy decisions for cloud services, establish governance frameworks (landing zones, guardrails), and guide development teams on cloud-native design patterns such as microservices, serverless, and event-driven architectures. They regularly audit existing deployments for security posture, cost anomalies, and performance bottlenecks. A significant portion of the work is advisory\u2014sitting in design reviews, consulting with engineering teams, and presenting architecture decisions to leadership. Key Skills Required Deep expertise in at least one major cloud provider (AWS, Azure, or GCP) with certifications such as AWS Solutions Architect Professional or Google Cloud Professional Cloud Architect is the baseline expectation. Knowledge of networking (VPCs, VPNs, CDNs, DNS), security (IAM, encryption, zero-trust), containerization (Kubernetes, ECS), and Infrastructure as Code (Terraform, Pulumi, CDK) is essential. Soft skills including stakeholder management, written documentation, and the ability to present trade-offs clearly to non-technical executives are critical differentiators. What Kind of Person Tends to Succeed Cloud Architects thrive on systems thinking\u2014they naturally zoom out to see how components interact at scale and zoom in to identify failure modes. They are comfortable with ambiguity, making architectural decisions with incomplete information while documenting assumptions. Strong communicators who can bridge the gap between business leadership and engineering teams excel in this role. A disposition toward continuous learning is mandatory because cloud services evolve rapidly. Career Progression The typical path moves from Cloud Engineer or DevOps Engineer \u2192 Senior Cloud Engineer \u2192 Cloud Architect \u2192 Senior/Principal Cloud Architect \u2192 Distinguished Engineer or VP of Cloud Engineering. Some architects move into CTO or Chief Architect roles. Consulting trajectories through firms like AWS Professional Services or Big 4 technology practices are also common. Salary Range & Annual Growth U.S. salaries range from $130,000\u2013$160,000 for early-career architects, $170,000\u2013$220,000 at the mid-to-senior level, and $230,000\u2013$300,000+ for principal and distinguished levels including equity. Annual salary growth is projected at 8\u201311% through 2030, driven by persistent multi-cloud complexity and cloud-native transformation demand. Data Sources U.S. Bureau of Labor Statistics \u2013 Computer Network Architects (2024) AWS re:Invent 2023 Workforce Trends Report Gartner Forecast: Public Cloud Services (2024) Levels.fyi \u2013 Cloud Architect Compensation Data (2024) LinkedIn Jobs on the Rise Report (2024) Pluralsight State of Cloud Report (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "A Cloud Architect designs the high-level structure of cloud computing systems\u2014choosing the right mix of services, defining networking topology, establishing security boundaries, and ensuring scalability and cost-efficiency. As virtually every enterprise accelerates its cloud migration and multi-cloud strategy, architects who can design robust, cost-optimized, and secure cloud infrastructures are among the most sought-after professionals in IT.",
+      "what": "Cloud Architects thrive on systems thinking\u2014they naturally zoom out to see how components interact at scale and zoom in to identify failure modes. They are comfortable with ambiguity, making architectural decisions with incomplete information while documenting assumptions. Strong communicators who can bridge the gap between business leadership and engineering teams excel in this role. A disposition toward continuous learning is mandatory because cloud services evolve rapidly.",
+      "key": "Deep expertise in at least one major cloud provider (AWS, Azure, or GCP) with certifications such as AWS Solutions Architect Professional or Google Cloud Professional Cloud Architect is the baseline expectation. Knowledge of networking (VPCs, VPNs, CDNs, DNS), security (IAM, encryption, zero-trust), containerization (Kubernetes, ECS), and Infrastructure as Code (Terraform, Pulumi, CDK) is essential. Soft skills including stakeholder management, written documentation, and the ability to present trade-offs clearly to non-technical executives are critical differentiators.",
+      "career": "The typical path moves from Cloud Engineer or DevOps Engineer \u2192 Senior Cloud Engineer \u2192 Cloud Architect \u2192 Senior/Principal Cloud Architect \u2192 Distinguished Engineer or VP of Cloud Engineering. Some architects move into CTO or Chief Architect roles. Consulting trajectories through firms like AWS Professional Services or Big 4 technology practices are also common.",
+      "salary": "U.S. salaries range from $130,000\u2013$160,000 for early-career architects, $170,000\u2013$220,000 at the mid-to-senior level, and $230,000\u2013$300,000+ for principal and distinguished levels including equity. Annual salary growth is projected at 8\u201311% through 2030, driven by persistent multi-cloud complexity and cloud-native transformation demand.",
+      "data": "U.S. Bureau of Labor Statistics \u2013 Computer Network Architects (2024) AWS re:Invent 2023 Workforce Trends Report Gartner Forecast: Public Cloud Services (2024) Levels.fyi \u2013 Cloud Architect Compensation Data (2024) LinkedIn Jobs on the Rise Report (2024) Pluralsight State of Cloud Report (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "04_DevOps_Platform_Engineer",
+    "role_name": "DevOps / Platform Engineer",
+    "role_family": "Engineering",
+    "required_hard_skills": [
+      "Python",
+      "C",
+      "Go",
+      "Bash",
+      "Kubernetes",
+      "Terraform",
+      "ArgoCD",
+      "CI/CD",
+      "GitHub Actions",
+      "Jenkins",
+      "LLM",
+      "Prometheus",
+      "Grafana",
+      "OpenTelemetry",
+      "Infrastructure as Code",
+      "Service Mesh",
+      "Istio",
+      "AI",
+      "GitHub"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "Moderate",
+      "extraversion": "Moderate",
+      "agreeableness": "Moderate",
+      "neuroticism": "Low"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "High",
+      "leadership_growth": "High",
+      "dynamic_environment": "High"
+    },
+    "seniority_level": "Senior",
+    "avg_ramp_up_months": 12,
+    "growth_trajectory": "High",
+    "salary_range": "$90,000\u2013$120,000",
+    "description_summary": "DevOps and Platform Engineers build and maintain the internal developer platforms, CI/CD pipelines, and automation infrastructure that enable software teams to ship faster and more reliably. The role has evolved beyond its roots in bridging development and operations into a specialized discipline focused on building \"paved roads\"\u2014golden paths that make the right way the easy way for developers. Over the next decade, as software complexity grows and developer productivity becomes a C-suite priority, Platform Engineering will be recognized as a core competency.",
+    "full_text": "DevOps / Platform Engineer IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Technical Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview DevOps and Platform Engineers build and maintain the internal developer platforms, CI/CD pipelines, and automation infrastructure that enable software teams to ship faster and more reliably. The role has evolved beyond its roots in bridging development and operations into a specialized discipline focused on building \"paved roads\"\u2014golden paths that make the right way the easy way for developers. Over the next decade, as software complexity grows and developer productivity becomes a C-suite priority, Platform Engineering will be recognized as a core competency. What the Role Involves Work encompasses designing and maintaining CI/CD pipelines (GitHub Actions, Jenkins, ArgoCD), managing Kubernetes clusters, building internal developer portals (Backstage), writing Infrastructure as Code, establishing observability stacks (Prometheus, Grafana, OpenTelemetry), and creating self-service tooling that reduces cognitive load on application teams. Platform Engineers also handle incident response frameworks, define SLOs, and collaborate with security teams on supply chain hardening. A growing focus is on AI-assisted developer tooling and integrating LLM-based coding assistants into the development workflow. Key Skills Required Proficiency in Linux systems, at least one scripting language (Python, Go, or Bash), Kubernetes administration, Terraform or equivalent IaC tools, and a major cloud platform. Knowledge of GitOps principles, service mesh technologies (Istio, Linkerd), and secrets management (Vault) is valuable at senior levels. Soft skills\u2014empathy for developers as internal customers, ability to write clear runbooks and documentation, and collaborative problem-solving\u2014are as important as technical depth. What Kind of Person Tends to Succeed Effective Platform Engineers have an infrastructure mindset combined with a product mindset: they treat their internal developer platform as a product with users (other engineers), prioritize features by developer impact, and gather feedback systematically. They enjoy automation and have an allergy to toil. They are comfortable being on-call and stay calm under the pressure of production incidents. Career Progression Career paths move from Junior DevOps Engineer \u2192 DevOps/Platform Engineer \u2192 Senior Platform Engineer \u2192 Staff Platform Engineer \u2192 Principal/Distinguished Engineer or Engineering Manager. Specializations include SRE (Site Reliability Engineering), Cloud Security, and Developer Experience (DevEx). The role frequently overlaps with and transitions into Cloud Architecture. Salary Range & Annual Growth Entry-level DevOps Engineers earn $90,000\u2013$120,000 in the U.S. Senior Platform Engineers command $150,000\u2013$200,000, and staff/principal levels exceed $220,000 including equity at top companies. Annual salary growth of 7\u201310% is projected, reflecting the criticality of developer productivity platforms in scaling engineering organizations. Data Sources DORA State of DevOps Report (2024) Puppet State of DevOps Report (2024) Gartner Platform Engineering Hype Cycle (2024) Levels.fyi \u2013 DevOps/SRE Compensation (2024) CNCF Annual Survey (2024) Stack Overflow Developer Survey (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "DevOps and Platform Engineers build and maintain the internal developer platforms, CI/CD pipelines, and automation infrastructure that enable software teams to ship faster and more reliably. The role has evolved beyond its roots in bridging development and operations into a specialized discipline focused on building \"paved roads\"\u2014golden paths that make the right way the easy way for developers. Over the next decade, as software complexity grows and developer productivity becomes a C-suite priority, Platform Engineering will be recognized as a core competency.",
+      "what": "Effective Platform Engineers have an infrastructure mindset combined with a product mindset: they treat their internal developer platform as a product with users (other engineers), prioritize features by developer impact, and gather feedback systematically. They enjoy automation and have an allergy to toil. They are comfortable being on-call and stay calm under the pressure of production incidents.",
+      "key": "Proficiency in Linux systems, at least one scripting language (Python, Go, or Bash), Kubernetes administration, Terraform or equivalent IaC tools, and a major cloud platform. Knowledge of GitOps principles, service mesh technologies (Istio, Linkerd), and secrets management (Vault) is valuable at senior levels. Soft skills\u2014empathy for developers as internal customers, ability to write clear runbooks and documentation, and collaborative problem-solving\u2014are as important as technical depth.",
+      "career": "Career paths move from Junior DevOps Engineer \u2192 DevOps/Platform Engineer \u2192 Senior Platform Engineer \u2192 Staff Platform Engineer \u2192 Principal/Distinguished Engineer or Engineering Manager. Specializations include SRE (Site Reliability Engineering), Cloud Security, and Developer Experience (DevEx). The role frequently overlaps with and transitions into Cloud Architecture.",
+      "salary": "Entry-level DevOps Engineers earn $90,000\u2013$120,000 in the U.S. Senior Platform Engineers command $150,000\u2013$200,000, and staff/principal levels exceed $220,000 including equity at top companies. Annual salary growth of 7\u201310% is projected, reflecting the criticality of developer productivity platforms in scaling engineering organizations.",
+      "data": "DORA State of DevOps Report (2024) Puppet State of DevOps Report (2024) Gartner Platform Engineering Hype Cycle (2024) Levels.fyi \u2013 DevOps/SRE Compensation (2024) CNCF Annual Survey (2024) Stack Overflow Developer Survey (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "05_Cybersecurity_Engineer",
+    "role_name": "Cybersecurity Engineer",
+    "role_family": "Engineering",
+    "required_hard_skills": [
+      "Python",
+      "Bash",
+      "PowerShell",
+      "AWS",
+      "SIEM",
+      "Penetration Testing",
+      "ISO 27001",
+      "NIST",
+      "Risk Management",
+      "AI"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "High",
+      "extraversion": "Moderate",
+      "agreeableness": "Moderate",
+      "neuroticism": "Moderate"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "Moderate",
+      "leadership_growth": "High",
+      "dynamic_environment": "Moderate"
+    },
+    "seniority_level": "Senior",
+    "avg_ramp_up_months": 12,
+    "growth_trajectory": "High",
+    "salary_range": "$95,000\u2013$130,000",
+    "description_summary": "Cybersecurity Engineers design, implement, and maintain technical defenses protecting an organization's digital assets from threats. The role spans everything from secure architecture review and vulnerability management to incident response and threat hunting. With the volume and sophistication of cyberattacks growing every year\u2014accelerated now by AI-generated phishing and autonomous exploitation tools\u2014the demand for skilled security engineers has never been higher and shows no sign of abating through 2035.",
+    "full_text": "Cybersecurity Engineer IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Technical Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview Cybersecurity Engineers design, implement, and maintain technical defenses protecting an organization's digital assets from threats. The role spans everything from secure architecture review and vulnerability management to incident response and threat hunting. With the volume and sophistication of cyberattacks growing every year\u2014accelerated now by AI-generated phishing and autonomous exploitation tools\u2014the demand for skilled security engineers has never been higher and shows no sign of abating through 2035. What the Role Involves Core responsibilities include designing and implementing security controls (firewalls, WAFs, endpoint detection, SIEM/SOAR), performing penetration testing and red team exercises, conducting vulnerability assessments and code security reviews, managing identity and access management (IAM) systems, and leading incident response during breaches. Security Engineers also develop security automation scripts, integrate security tooling into DevSecOps pipelines, and create threat models for new systems. Communication and documentation\u2014writing security policies, risk assessments, and executive briefings\u2014constitute a significant portion of the role. Key Skills Required Technical foundations include networking protocols (TCP/IP, DNS, HTTP/S, TLS), operating systems internals (Linux, Windows), scripting (Python, Bash, PowerShell), and familiarity with security frameworks (NIST CSF, MITRE ATT&CK, ISO 27001). Specializations include cloud security, application security (AppSec), penetration testing, digital forensics, and threat intelligence. Certifications such as CISSP, CEH, OSCP, and cloud security certifications (AWS Security Specialty) are widely valued. Analytical thinking, integrity, and the ability to communicate risk in business terms are essential soft skills. What Kind of Person Tends to Succeed The most effective security engineers have an adversarial mindset\u2014they think like attackers to anticipate where defenses will fail. They are detail-oriented, systematic, and patient enough to comb through logs and code looking for anomalies. They also thrive under pressure, as incident response demands rapid, clear-headed decision-making. Ethical grounding is non-negotiable: access to sensitive systems demands trustworthiness. Career Progression Typical paths: Security Analyst \u2192 Security Engineer \u2192 Senior Security Engineer \u2192 Security Architect or Security Manager \u2192 CISO or VP of Security. Specializations include Penetration Tester / Red Teamer, Threat Intelligence Analyst, GRC (Governance, Risk, Compliance) Analyst, and Cloud Security Engineer, each with distinct progression ladders. Salary Range & Annual Growth U.S. base salaries range from $95,000\u2013$130,000 at entry level, $140,000\u2013$185,000 at mid-senior level, and $190,000\u2013$260,000 at the CISO / VP level. Cloud and AI security specialists command a significant premium. Annual wage growth of 9\u201313% is projected, making this one of the fastest-growing compensation trajectories in IT, driven by the global cybersecurity talent shortage (estimated 3.5 million unfilled positions worldwide as of 2024). Data Sources (ISC)\u00b2 Cybersecurity Workforce Study (2024) Cybersecurity Ventures \u2013 Cybercrime Report (2024) U.S. Bureau of Labor Statistics \u2013 Information Security Analysts (2024) SANS Institute Salary and Career Survey (2024) Gartner Security and Risk Management Summit Report (2024) LinkedIn Cybersecurity Jobs Report (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "Cybersecurity Engineers design, implement, and maintain technical defenses protecting an organization's digital assets from threats. The role spans everything from secure architecture review and vulnerability management to incident response and threat hunting. With the volume and sophistication of cyberattacks growing every year\u2014accelerated now by AI-generated phishing and autonomous exploitation tools\u2014the demand for skilled security engineers has never been higher and shows no sign of abating through 2035.",
+      "what": "The most effective security engineers have an adversarial mindset\u2014they think like attackers to anticipate where defenses will fail. They are detail-oriented, systematic, and patient enough to comb through logs and code looking for anomalies. They also thrive under pressure, as incident response demands rapid, clear-headed decision-making. Ethical grounding is non-negotiable: access to sensitive systems demands trustworthiness.",
+      "key": "Technical foundations include networking protocols (TCP/IP, DNS, HTTP/S, TLS), operating systems internals (Linux, Windows), scripting (Python, Bash, PowerShell), and familiarity with security frameworks (NIST CSF, MITRE ATT&CK, ISO 27001). Specializations include cloud security, application security (AppSec), penetration testing, digital forensics, and threat intelligence. Certifications such as CISSP, CEH, OSCP, and cloud security certifications (AWS Security Specialty) are widely valued. Analytical thinking, integrity, and the ability to communicate risk in business terms are essential soft skills.",
+      "career": "Typical paths: Security Analyst \u2192 Security Engineer \u2192 Senior Security Engineer \u2192 Security Architect or Security Manager \u2192 CISO or VP of Security. Specializations include Penetration Tester / Red Teamer, Threat Intelligence Analyst, GRC (Governance, Risk, Compliance) Analyst, and Cloud Security Engineer, each with distinct progression ladders.",
+      "salary": "U.S. base salaries range from $95,000\u2013$130,000 at entry level, $140,000\u2013$185,000 at mid-senior level, and $190,000\u2013$260,000 at the CISO / VP level. Cloud and AI security specialists command a significant premium. Annual wage growth of 9\u201313% is projected, making this one of the fastest-growing compensation trajectories in IT, driven by the global cybersecurity talent shortage (estimated 3.5 million unfilled positions worldwide as of 2024).",
+      "data": "(ISC)\u00b2 Cybersecurity Workforce Study (2024) Cybersecurity Ventures \u2013 Cybercrime Report (2024) U.S. Bureau of Labor Statistics \u2013 Information Security Analysts (2024) SANS Institute Salary and Career Survey (2024) Gartner Security and Risk Management Summit Report (2024) LinkedIn Cybersecurity Jobs Report (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "06_MLOps_Engineer",
+    "role_name": "MLOps Engineer",
+    "role_family": "Engineering",
+    "required_hard_skills": [
+      "Python",
+      "Kubernetes",
+      "CI/CD",
+      "GitHub Actions",
+      "Airflow",
+      "dbt",
+      "Databricks",
+      "MLflow",
+      "Kubeflow",
+      "Weights & Biases",
+      "MLOps",
+      "Prometheus",
+      "Grafana",
+      "Machine Learning",
+      "AI",
+      "Google Vertex AI",
+      "GitHub"
+    ],
+    "required_traits": {
+      "openness": "High",
+      "conscientiousness": "Moderate",
+      "extraversion": "Moderate",
+      "agreeableness": "Low",
+      "neuroticism": "High"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "High",
+      "leadership_growth": "High",
+      "dynamic_environment": "Moderate"
+    },
+    "seniority_level": "Senior",
+    "avg_ramp_up_months": 12,
+    "growth_trajectory": "High",
+    "salary_range": "$110,000\u2013$140,000",
+    "description_summary": "MLOps Engineers build the infrastructure and processes that reliably productionize machine learning models and keep them performing well over time. They sit at the intersection of data engineering, machine learning, and DevOps, ensuring that the path from a data scientist's experiment to a live, monitored, automatically-retraining production model is as smooth and automated as possible. As organizations move beyond ML pilots to enterprise-scale AI deployments, MLOps has become a critical discipline in its own right.",
+    "full_text": "MLOps Engineer IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Technical Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview MLOps Engineers build the infrastructure and processes that reliably productionize machine learning models and keep them performing well over time. They sit at the intersection of data engineering, machine learning, and DevOps, ensuring that the path from a data scientist's experiment to a live, monitored, automatically-retraining production model is as smooth and automated as possible. As organizations move beyond ML pilots to enterprise-scale AI deployments, MLOps has become a critical discipline in its own right. What the Role Involves Responsibilities include designing and maintaining ML training and serving infrastructure (feature stores, model registries, batch and real-time inference endpoints), building automated retraining pipelines triggered by data drift or performance degradation, establishing model monitoring and observability (concept drift detection, fairness metrics), managing compute resources for training workloads (GPU clusters, spot instances), and integrating ML workflows with existing software development and CI/CD processes. MLOps Engineers frequently evaluate and deploy open-source and vendor tooling (MLflow, Kubeflow, Tecton, Feast, Seldon, BentoML, Vertex AI Pipelines). Key Skills Required Core skills span Python engineering, Kubernetes, CI/CD tools (GitHub Actions, Argo Workflows), cloud ML platforms (SageMaker, Vertex AI, AzureML), and data pipeline tools (Apache Airflow, Prefect, dbt). Understanding of ML model fundamentals\u2014enough to debug training anomalies and interpret evaluation metrics\u2014is essential. Experience with observability tooling (Prometheus, Grafana) applied to model performance is increasingly expected. Strong communication skills are needed to bridge data science and platform engineering teams. What Kind of Person Tends to Succeed MLOps Engineers succeed when they have both an engineer's discipline (reliability, automation, clean code) and enough ML literacy to understand what data scientists need. They enjoy solving integration challenges\u2014the messy boundary problems where ML research meets production software. Patience and persistence are virtues, as debugging model degradation in production can be deeply ambiguous. Career Progression Junior MLOps Engineer \u2192 MLOps Engineer \u2192 Senior MLOps Engineer \u2192 Staff/Principal MLOps Engineer or ML Platform Lead \u2192 Director of ML Engineering or VP of AI Infrastructure. Many transition laterally into Cloud Architecture, Data Engineering, or AI Product roles. Salary Range & Annual Growth U.S. salaries range from $110,000\u2013$140,000 at entry level, $150,000\u2013$195,000 at mid-senior level, and $200,000+ at staff/principal levels with equity. Annual salary growth of 10\u201314% is projected through 2030, as MLOps remains among the scarcest skill sets relative to demand. Data Sources Databricks State of Data + AI (2024) ML in Production Survey \u2013 Weights & Biases (2024) Gartner AI Engineering Market Guide (2024) Levels.fyi \u2013 ML Engineer Compensation (2024) O'Reilly AI & ML Trends Report (2024) McKinsey \u2013 The State of AI in Organizations (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "MLOps Engineers build the infrastructure and processes that reliably productionize machine learning models and keep them performing well over time. They sit at the intersection of data engineering, machine learning, and DevOps, ensuring that the path from a data scientist's experiment to a live, monitored, automatically-retraining production model is as smooth and automated as possible. As organizations move beyond ML pilots to enterprise-scale AI deployments, MLOps has become a critical discipline in its own right.",
+      "what": "MLOps Engineers succeed when they have both an engineer's discipline (reliability, automation, clean code) and enough ML literacy to understand what data scientists need. They enjoy solving integration challenges\u2014the messy boundary problems where ML research meets production software. Patience and persistence are virtues, as debugging model degradation in production can be deeply ambiguous.",
+      "key": "Core skills span Python engineering, Kubernetes, CI/CD tools (GitHub Actions, Argo Workflows), cloud ML platforms (SageMaker, Vertex AI, AzureML), and data pipeline tools (Apache Airflow, Prefect, dbt). Understanding of ML model fundamentals\u2014enough to debug training anomalies and interpret evaluation metrics\u2014is essential. Experience with observability tooling (Prometheus, Grafana) applied to model performance is increasingly expected. Strong communication skills are needed to bridge data science and platform engineering teams.",
+      "career": "Junior MLOps Engineer \u2192 MLOps Engineer \u2192 Senior MLOps Engineer \u2192 Staff/Principal MLOps Engineer or ML Platform Lead \u2192 Director of ML Engineering or VP of AI Infrastructure. Many transition laterally into Cloud Architecture, Data Engineering, or AI Product roles.",
+      "salary": "U.S. salaries range from $110,000\u2013$140,000 at entry level, $150,000\u2013$195,000 at mid-senior level, and $200,000+ at staff/principal levels with equity. Annual salary growth of 10\u201314% is projected through 2030, as MLOps remains among the scarcest skill sets relative to demand.",
+      "data": "Databricks State of Data + AI (2024) ML in Production Survey \u2013 Weights & Biases (2024) Gartner AI Engineering Market Guide (2024) Levels.fyi \u2013 ML Engineer Compensation (2024) O'Reilly AI & ML Trends Report (2024) McKinsey \u2013 The State of AI in Organizations (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "07_Site_Reliability_Engineer_SRE",
+    "role_name": "Site Reliability Engineer (SRE)",
+    "role_family": "Engineering",
+    "required_hard_skills": [
+      "Python",
+      "Java",
+      "Go",
+      "Kubernetes",
+      "Prometheus",
+      "Grafana",
+      "Incident Management"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "High",
+      "extraversion": "Moderate",
+      "agreeableness": "Moderate",
+      "neuroticism": "High"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "High",
+      "leadership_growth": "High",
+      "dynamic_environment": "Moderate"
+    },
+    "seniority_level": "Senior",
+    "avg_ramp_up_months": 12,
+    "growth_trajectory": "High",
+    "salary_range": "$110,000\u2013$145,000",
+    "description_summary": "Site Reliability Engineers apply software engineering principles to infrastructure and operations problems, with the explicit goal of building highly reliable, scalable, and efficient systems. Originated at Google and now widely adopted across the industry, SRE occupies a distinctive role that combines deep systems knowledge with software craftsmanship. Over the next decade, as real-time digital services become the backbone of every industry, organizations will demand more engineers capable of maintaining five-nines reliability at scale.",
+    "full_text": "Site Reliability Engineer (SRE) IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Technical Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview Site Reliability Engineers apply software engineering principles to infrastructure and operations problems, with the explicit goal of building highly reliable, scalable, and efficient systems. Originated at Google and now widely adopted across the industry, SRE occupies a distinctive role that combines deep systems knowledge with software craftsmanship. Over the next decade, as real-time digital services become the backbone of every industry, organizations will demand more engineers capable of maintaining five-nines reliability at scale. What the Role Involves SREs manage service level objectives (SLOs) and error budgets, build automation to eliminate operational toil, design and implement observability solutions (distributed tracing, metrics, structured logging), lead blameless post-mortems after incidents, and work on capacity planning and performance optimization. They also collaborate closely with product engineers during the design phase to review reliability implications and establish operational readiness criteria before features launch. Increasingly, SREs build AIOps tooling that uses machine learning to detect anomalies and automate remediation. Key Skills Required Proficiency in at least one programming language (Go, Python, Java), Linux systems, networking, and distributed systems concepts (consensus protocols, CAP theorem, eventual consistency) is expected. Experience with Kubernetes, service meshes, and observability stacks (Prometheus + Grafana + Loki + Tempo or similar) is standard. Strong incident management skills\u2014knowing how to triage, communicate, and resolve production crises\u2014distinguish senior practitioners. Soft skills include meticulous documentation and the ability to run effective post-mortems without blame. What Kind of Person Tends to Succeed Top SREs are engineers who genuinely enjoy operations challenges\u2014debugging production mysteries at 2 AM is intellectually stimulating to them. They are systematic thinkers who document everything and have a low tolerance for repeated manual interventions. The best SREs also have high empathy for end users and frame reliability work in terms of user impact, not just uptime percentages. Career Progression Junior SRE \u2192 SRE \u2192 Senior SRE \u2192 Staff SRE \u2192 Principal SRE or SRE Manager \u2192 Director of Engineering (Infrastructure). Many cross-pollinate with Platform Engineering and Cloud Architecture roles. Google's SRE model has formalized the IC ladder up to Senior Staff and Distinguished Engineer. Salary Range & Annual Growth U.S. salaries: $110,000\u2013$145,000 (junior), $155,000\u2013$200,000 (senior), $210,000\u2013$280,000 (staff/principal with equity). Annual salary growth of 7\u201310% is projected, consistent with broad DevOps/Platform Engineering demand growth. Data Sources Google SRE Book (Beyer et al., O'Reilly Media) DORA State of DevOps Report (2024) Levels.fyi \u2013 SRE Salary Data (2024) Gartner IT Operations & Service Management Magic Quadrant (2024) LinkedIn Jobs on the Rise: SRE (2024) U.S. BLS \u2013 Computer Occupations Outlook (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "Site Reliability Engineers apply software engineering principles to infrastructure and operations problems, with the explicit goal of building highly reliable, scalable, and efficient systems. Originated at Google and now widely adopted across the industry, SRE occupies a distinctive role that combines deep systems knowledge with software craftsmanship. Over the next decade, as real-time digital services become the backbone of every industry, organizations will demand more engineers capable of maintaining five-nines reliability at scale.",
+      "what": "Top SREs are engineers who genuinely enjoy operations challenges\u2014debugging production mysteries at 2 AM is intellectually stimulating to them. They are systematic thinkers who document everything and have a low tolerance for repeated manual interventions. The best SREs also have high empathy for end users and frame reliability work in terms of user impact, not just uptime percentages.",
+      "key": "Proficiency in at least one programming language (Go, Python, Java), Linux systems, networking, and distributed systems concepts (consensus protocols, CAP theorem, eventual consistency) is expected. Experience with Kubernetes, service meshes, and observability stacks (Prometheus + Grafana + Loki + Tempo or similar) is standard. Strong incident management skills\u2014knowing how to triage, communicate, and resolve production crises\u2014distinguish senior practitioners. Soft skills include meticulous documentation and the ability to run effective post-mortems without blame.",
+      "career": "Junior SRE \u2192 SRE \u2192 Senior SRE \u2192 Staff SRE \u2192 Principal SRE or SRE Manager \u2192 Director of Engineering (Infrastructure). Many cross-pollinate with Platform Engineering and Cloud Architecture roles. Google's SRE model has formalized the IC ladder up to Senior Staff and Distinguished Engineer.",
+      "salary": "U.S. salaries: $110,000\u2013$145,000 (junior), $155,000\u2013$200,000 (senior), $210,000\u2013$280,000 (staff/principal with equity). Annual salary growth of 7\u201310% is projected, consistent with broad DevOps/Platform Engineering demand growth.",
+      "data": "Google SRE Book (Beyer et al., O'Reilly Media) DORA State of DevOps Report (2024) Levels.fyi \u2013 SRE Salary Data (2024) Gartner IT Operations & Service Management Magic Quadrant (2024) LinkedIn Jobs on the Rise: SRE (2024) U.S. BLS \u2013 Computer Occupations Outlook (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "12_Natural_Language_Processing_NLP_Engineer",
+    "role_name": "Natural Language Processing (NLP) Engineer",
+    "role_family": "Engineering",
+    "required_hard_skills": [
+      "Python",
+      "PyTorch",
+      "Hugging Face",
+      "GPT",
+      "RAG",
+      "LLM",
+      "Transformers",
+      "NLP",
+      "Hiring",
+      "Machine Learning",
+      "AI"
+    ],
+    "required_traits": {
+      "openness": "High",
+      "conscientiousness": "High",
+      "extraversion": "Low",
+      "agreeableness": "Low",
+      "neuroticism": "Moderate"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "Moderate",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "Moderate",
+      "problem_solving": "High",
+      "leadership_growth": "High",
+      "dynamic_environment": "High"
+    },
+    "seniority_level": "Senior",
+    "avg_ramp_up_months": 12,
+    "growth_trajectory": "High",
+    "salary_range": "$120,000\u2013$155,000",
+    "description_summary": "NLP Engineers build systems that enable computers to understand, interpret, and generate human language. With the explosive growth of large language models (LLMs) such as GPT-4, Claude, LLaMA, and Gemini, NLP has transformed from a niche research discipline into one of the most commercially central areas in AI. Applications span conversational AI, document understanding, sentiment analysis, machine translation, information retrieval, and code generation. The next decade will see NLP capabilities become embedded in virtually every enterprise application.",
+    "full_text": "Natural Language Processing (NLP) Engineer IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Technical Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview NLP Engineers build systems that enable computers to understand, interpret, and generate human language. With the explosive growth of large language models (LLMs) such as GPT-4, Claude, LLaMA, and Gemini, NLP has transformed from a niche research discipline into one of the most commercially central areas in AI. Applications span conversational AI, document understanding, sentiment analysis, machine translation, information retrieval, and code generation. The next decade will see NLP capabilities become embedded in virtually every enterprise application. What the Role Involves Work includes fine-tuning and adapting pre-trained language models for domain-specific applications, building retrieval-augmented generation (RAG) pipelines, implementing text classification, named entity recognition, question answering, and summarization systems, evaluating model outputs for accuracy, safety, and bias, and deploying NLP services at scale with appropriate latency and cost trade-offs. NLP Engineers increasingly work on multi-modal models combining text with images, audio, and structured data, and on agentic systems that use LLMs to orchestrate multi-step tasks. Key Skills Required Strong Python skills, deep familiarity with Hugging Face Transformers, PyTorch, and the transformer architecture are foundational. Knowledge of tokenization, attention mechanisms, fine-tuning techniques (LoRA, RLHF, DPO), vector databases (Pinecone, Weaviate, Chroma), and LLM deployment frameworks (vLLM, TGI, TensorRT-LLM) is expected at senior levels. Linguistics knowledge, while not always required, is a genuine differentiator for ambiguous language understanding problems. Soft skills: meticulous experimental methodology and the ability to set realistic expectations about what LLMs can and cannot reliably do. What Kind of Person Tends to Succeed NLP Engineers are fascinated by the complexity of human language and the surprising ways language models succeed and fail. They are experimentally minded, running many evaluations and ablations to understand system behavior. They maintain healthy skepticism about model capabilities and are rigorous about evaluation design. Many have a background in computational linguistics, cognitive science, or information retrieval in addition to ML engineering. Career Progression NLP Engineer \u2192 Senior NLP Engineer \u2192 Staff NLP Engineer \u2192 Principal NLP / Research Scientist or NLP Lead. At large AI labs, the IC track extends to Research Scientist, Senior Research Scientist, and Research Director. Management paths lead to ML Engineering Manager and VP of AI Products. Salary Range & Annual Growth U.S. salaries: $120,000\u2013$155,000 (mid-level), $160,000\u2013$210,000 (senior), $220,000\u2013$350,000+ (staff/research scientist at top AI labs). Annual salary growth of 11\u201316% is projected, making NLP one of the highest-appreciating specializations through 2030. Data Sources Hugging Face Open LLM Leaderboard and Hiring Trends (2024) AI Index Report \u2013 Stanford HAI (2024) Levels.fyi \u2013 NLP/ML Engineer Compensation (2024) McKinsey \u2013 Generative AI Economic Impact (2023) O'Reilly State of AI Report (2024) IEEE Spectrum \u2013 Trends in NLP (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "NLP Engineers build systems that enable computers to understand, interpret, and generate human language. With the explosive growth of large language models (LLMs) such as GPT-4, Claude, LLaMA, and Gemini, NLP has transformed from a niche research discipline into one of the most commercially central areas in AI. Applications span conversational AI, document understanding, sentiment analysis, machine translation, information retrieval, and code generation. The next decade will see NLP capabilities become embedded in virtually every enterprise application.",
+      "what": "NLP Engineers are fascinated by the complexity of human language and the surprising ways language models succeed and fail. They are experimentally minded, running many evaluations and ablations to understand system behavior. They maintain healthy skepticism about model capabilities and are rigorous about evaluation design. Many have a background in computational linguistics, cognitive science, or information retrieval in addition to ML engineering.",
+      "key": "Strong Python skills, deep familiarity with Hugging Face Transformers, PyTorch, and the transformer architecture are foundational. Knowledge of tokenization, attention mechanisms, fine-tuning techniques (LoRA, RLHF, DPO), vector databases (Pinecone, Weaviate, Chroma), and LLM deployment frameworks (vLLM, TGI, TensorRT-LLM) is expected at senior levels. Linguistics knowledge, while not always required, is a genuine differentiator for ambiguous language understanding problems. Soft skills: meticulous experimental methodology and the ability to set realistic expectations about what LLMs can and cannot reliably do.",
+      "career": "NLP Engineer \u2192 Senior NLP Engineer \u2192 Staff NLP Engineer \u2192 Principal NLP / Research Scientist or NLP Lead. At large AI labs, the IC track extends to Research Scientist, Senior Research Scientist, and Research Director. Management paths lead to ML Engineering Manager and VP of AI Products.",
+      "salary": "U.S. salaries: $120,000\u2013$155,000 (mid-level), $160,000\u2013$210,000 (senior), $220,000\u2013$350,000+ (staff/research scientist at top AI labs). Annual salary growth of 11\u201316% is projected, making NLP one of the highest-appreciating specializations through 2030.",
+      "data": "Hugging Face Open LLM Leaderboard and Hiring Trends (2024) AI Index Report \u2013 Stanford HAI (2024) Levels.fyi \u2013 NLP/ML Engineer Compensation (2024) McKinsey \u2013 Generative AI Economic Impact (2023) O'Reilly State of AI Report (2024) IEEE Spectrum \u2013 Trends in NLP (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "15_Data_Engineer",
+    "role_name": "Data Engineer",
+    "role_family": "Data",
+    "required_hard_skills": [
+      "Python",
+      "SQL",
+      "Kubernetes",
+      "Docker",
+      "Terraform",
+      "Kafka",
+      "Airflow",
+      "dbt",
+      "Snowflake",
+      "BigQuery",
+      "Redshift",
+      "Databricks",
+      "Pandas",
+      "Excel",
+      "Machine Learning",
+      "AI"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "High",
+      "extraversion": "Moderate",
+      "agreeableness": "Low",
+      "neuroticism": "High"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "High",
+      "leadership_growth": "High",
+      "dynamic_environment": "Moderate"
+    },
+    "seniority_level": "Senior",
+    "avg_ramp_up_months": 12,
+    "growth_trajectory": "High",
+    "salary_range": "$95,000\u2013$130,000",
+    "description_summary": "Data Engineers design, build, and maintain the pipelines, storage systems, and processing infrastructure that move data from its sources to the places where it can be analyzed and used by data scientists, analysts, and AI systems. While data scientists and ML engineers get much of the glamour, data engineers perform the foundational work that makes all AI and analytics possible. With data volumes growing exponentially and AI training pipelines requiring massive, high-quality datasets, the data engineering function has never been more strategically important.",
+    "full_text": "Data Engineer IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Technical Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview Data Engineers design, build, and maintain the pipelines, storage systems, and processing infrastructure that move data from its sources to the places where it can be analyzed and used by data scientists, analysts, and AI systems. While data scientists and ML engineers get much of the glamour, data engineers perform the foundational work that makes all AI and analytics possible. With data volumes growing exponentially and AI training pipelines requiring massive, high-quality datasets, the data engineering function has never been more strategically important. What the Role Involves Core activities include designing ELT/ETL pipelines (ingestion, transformation, loading), building and maintaining data warehouses and data lakes (Snowflake, Databricks, BigQuery, Redshift), implementing streaming data pipelines (Apache Kafka, Flink, Spark Streaming), developing data models and dbt transformations, enforcing data quality and governance (Great Expectations, Monte Carlo), and collaborating with data scientists to deliver feature engineering pipelines. Modern data engineers also work on the data mesh architecture pattern, data contracts, and real-time feature stores for ML systems. Key Skills Required Advanced SQL, Python (PySpark, pandas), and proficiency with at least one cloud data platform are foundational. Experience with orchestration tools (Apache Airflow, Prefect, Dagster), messaging systems (Kafka), and distributed processing frameworks (Spark, Flink) is expected at senior levels. Infrastructure skills (Terraform, Docker, Kubernetes) are increasingly expected as data engineers own more of the operational lifecycle. Soft skills: the ability to collaborate with diverse stakeholders\u2014analysts, data scientists, product teams\u2014who all have different data needs. What Kind of Person Tends to Succeed Data Engineers who excel are meticulous about correctness and reliability. They care deeply about data quality and treat pipelines as production software with testing, monitoring, and SLAs. They are pragmatic problem-solvers who can balance the perfect data model against the practical constraints of delivery timelines. A good data engineer has the rigor of a software engineer combined with the domain curiosity of a data scientist. Career Progression Junior Data Engineer \u2192 Data Engineer \u2192 Senior Data Engineer \u2192 Staff/Principal Data Engineer or Data Platform Architect \u2192 Data Engineering Manager \u2192 Director of Data Engineering \u2192 Head of Data. The field has a well-developed IC track at top companies through principal and distinguished engineer levels. Salary Range & Annual Growth U.S. salaries: $95,000\u2013$130,000 (junior-mid), $140,000\u2013$185,000 (senior), $190,000\u2013$260,000 (staff/principal with equity). Annual salary growth of 7\u201310% is projected through 2030, consistent with sustained demand for high-quality data infrastructure. Data Sources Databricks State of Data + AI (2024) dbt Labs State of Analytics Engineering Report (2024) Glassdoor \u2013 Data Engineer Salary Data (2024) O'Reilly Data Engineering Survey (2024) LinkedIn \u2013 Data Engineering Job Trends (2024) Gartner Data Management Market Guide (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "Data Engineers design, build, and maintain the pipelines, storage systems, and processing infrastructure that move data from its sources to the places where it can be analyzed and used by data scientists, analysts, and AI systems. While data scientists and ML engineers get much of the glamour, data engineers perform the foundational work that makes all AI and analytics possible. With data volumes growing exponentially and AI training pipelines requiring massive, high-quality datasets, the data engineering function has never been more strategically important.",
+      "what": "Data Engineers who excel are meticulous about correctness and reliability. They care deeply about data quality and treat pipelines as production software with testing, monitoring, and SLAs. They are pragmatic problem-solvers who can balance the perfect data model against the practical constraints of delivery timelines. A good data engineer has the rigor of a software engineer combined with the domain curiosity of a data scientist.",
+      "key": "Advanced SQL, Python (PySpark, pandas), and proficiency with at least one cloud data platform are foundational. Experience with orchestration tools (Apache Airflow, Prefect, Dagster), messaging systems (Kafka), and distributed processing frameworks (Spark, Flink) is expected at senior levels. Infrastructure skills (Terraform, Docker, Kubernetes) are increasingly expected as data engineers own more of the operational lifecycle. Soft skills: the ability to collaborate with diverse stakeholders\u2014analysts, data scientists, product teams\u2014who all have different data needs.",
+      "career": "Junior Data Engineer \u2192 Data Engineer \u2192 Senior Data Engineer \u2192 Staff/Principal Data Engineer or Data Platform Architect \u2192 Data Engineering Manager \u2192 Director of Data Engineering \u2192 Head of Data. The field has a well-developed IC track at top companies through principal and distinguished engineer levels.",
+      "salary": "U.S. salaries: $95,000\u2013$130,000 (junior-mid), $140,000\u2013$185,000 (senior), $190,000\u2013$260,000 (staff/principal with equity). Annual salary growth of 7\u201310% is projected through 2030, consistent with sustained demand for high-quality data infrastructure.",
+      "data": "Databricks State of Data + AI (2024) dbt Labs State of Analytics Engineering Report (2024) Glassdoor \u2013 Data Engineer Salary Data (2024) O'Reilly Data Engineering Survey (2024) LinkedIn \u2013 Data Engineering Job Trends (2024) Gartner Data Management Market Guide (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "21_FullStack_Developer",
+    "role_name": "Full-Stack Developer",
+    "role_family": "Engineering",
+    "required_hard_skills": [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "SQL",
+      "Go",
+      "React",
+      "Next.js",
+      "Node.js",
+      "GraphQL",
+      "AWS",
+      "Azure",
+      "GCP",
+      "CI/CD",
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Redis",
+      "LLM",
+      "AI",
+      "Git",
+      "GitHub"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "Moderate",
+      "extraversion": "Moderate",
+      "agreeableness": "Low",
+      "neuroticism": "High"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "Moderate",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "Moderate",
+      "leadership_growth": "High",
+      "dynamic_environment": "High"
+    },
+    "seniority_level": "Senior",
+    "avg_ramp_up_months": 12,
+    "growth_trajectory": "High",
+    "salary_range": "$80,000\u2013$110,000",
+    "description_summary": "Full-Stack Developers build both the client-facing front end and server-side back end of web applications, capable of owning a feature or product from user interface through to database. While specialists in specific layers (front-end, back-end) exist, the full-stack developer's versatility makes them especially valuable at startups, scale-ups, and cross-functional product squads. Evolving frameworks, AI-assisted coding, and low-code tooling are changing how full-stack work is done, but demand for developers who can build complete, production-quality experiences remains strong through 2035.",
+    "full_text": "Full-Stack Developer IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Technical Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview Full-Stack Developers build both the client-facing front end and server-side back end of web applications, capable of owning a feature or product from user interface through to database. While specialists in specific layers (front-end, back-end) exist, the full-stack developer's versatility makes them especially valuable at startups, scale-ups, and cross-functional product squads. Evolving frameworks, AI-assisted coding, and low-code tooling are changing how full-stack work is done, but demand for developers who can build complete, production-quality experiences remains strong through 2035. What the Role Involves Work spans designing and building responsive user interfaces (React, Vue, Next.js), implementing RESTful and GraphQL APIs, working with databases (SQL and NoSQL), deploying and managing cloud infrastructure (AWS, GCP, Azure, Vercel, Railway), integrating third-party services (payment processors, auth providers, AI APIs), ensuring application security, writing tests, and participating in code review. Modern full-stack developers increasingly work with AI-assisted coding tools (GitHub Copilot, Cursor) and integrate LLM capabilities directly into products. Key Skills Required JavaScript/TypeScript proficiency is foundational, typically with React or Next.js on the front end and Node.js, Python, or Go on the back end. Database experience (PostgreSQL, MySQL, MongoDB, Redis), REST/GraphQL API design, version control (Git), CI/CD practices, and basic infrastructure knowledge (containers, cloud deployment) round out the core skill set. Soft skills: the ability to prioritize and make pragmatic trade-offs between perfect architecture and delivery speed, which is the central tension of the role. What Kind of Person Tends to Succeed Successful full-stack developers are generalists at heart who enjoy the breadth of building something complete. They are pragmatic and iterative, comfortable shipping imperfect code and improving it. They maintain enough depth in each layer to identify performance bottlenecks and architectural issues, while being efficient enough to not over-engineer solutions. They are collaborative, participating actively in product discussions, not just implementation. Career Progression Junior Developer \u2192 Developer \u2192 Senior Developer \u2192 Lead Developer / Tech Lead \u2192 Engineering Manager or Principal Engineer \u2192 CTO (at smaller companies). Many specialize over time into front-end, back-end, or DevOps as organizations scale and demand deeper expertise. Salary Range & Annual Growth U.S. salaries: $80,000\u2013$110,000 (junior), $115,000\u2013$160,000 (senior), $165,000\u2013$220,000+ (lead/principal). Annual salary growth of 5\u20138% is projected, slightly below AI specializations but reflecting the role's broad, sustained demand. Data Sources Stack Overflow Developer Survey (2024) Glassdoor \u2013 Full Stack Developer Salaries (2024) GitHub Octoverse Report (2024) U.S. BLS \u2013 Web Developers Occupational Outlook (2024) LinkedIn Most In-Demand Skills (2024) HackerRank Developer Skills Report (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "Full-Stack Developers build both the client-facing front end and server-side back end of web applications, capable of owning a feature or product from user interface through to database. While specialists in specific layers (front-end, back-end) exist, the full-stack developer's versatility makes them especially valuable at startups, scale-ups, and cross-functional product squads. Evolving frameworks, AI-assisted coding, and low-code tooling are changing how full-stack work is done, but demand for developers who can build complete, production-quality experiences remains strong through 2035.",
+      "what": "Successful full-stack developers are generalists at heart who enjoy the breadth of building something complete. They are pragmatic and iterative, comfortable shipping imperfect code and improving it. They maintain enough depth in each layer to identify performance bottlenecks and architectural issues, while being efficient enough to not over-engineer solutions. They are collaborative, participating actively in product discussions, not just implementation.",
+      "key": "JavaScript/TypeScript proficiency is foundational, typically with React or Next.js on the front end and Node.js, Python, or Go on the back end. Database experience (PostgreSQL, MySQL, MongoDB, Redis), REST/GraphQL API design, version control (Git), CI/CD practices, and basic infrastructure knowledge (containers, cloud deployment) round out the core skill set. Soft skills: the ability to prioritize and make pragmatic trade-offs between perfect architecture and delivery speed, which is the central tension of the role.",
+      "career": "Junior Developer \u2192 Developer \u2192 Senior Developer \u2192 Lead Developer / Tech Lead \u2192 Engineering Manager or Principal Engineer \u2192 CTO (at smaller companies). Many specialize over time into front-end, back-end, or DevOps as organizations scale and demand deeper expertise.",
+      "salary": "U.S. salaries: $80,000\u2013$110,000 (junior), $115,000\u2013$160,000 (senior), $165,000\u2013$220,000+ (lead/principal). Annual salary growth of 5\u20138% is projected, slightly below AI specializations but reflecting the role's broad, sustained demand.",
+      "data": "Stack Overflow Developer Survey (2024) Glassdoor \u2013 Full Stack Developer Salaries (2024) GitHub Octoverse Report (2024) U.S. BLS \u2013 Web Developers Occupational Outlook (2024) LinkedIn Most In-Demand Skills (2024) HackerRank Developer Skills Report (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "26_AI_Product_Manager",
+    "role_name": "AI Product Manager",
+    "role_family": "Product & Strategy",
+    "required_hard_skills": [
+      "User Research",
+      "Stakeholder Management",
+      "Use Cases",
+      "Machine Learning",
+      "AI"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "Moderate",
+      "extraversion": "Moderate",
+      "agreeableness": "Moderate",
+      "neuroticism": "Moderate"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "Moderate",
+      "leadership_growth": "High",
+      "dynamic_environment": "Moderate"
+    },
+    "seniority_level": "Mid",
+    "avg_ramp_up_months": 9,
+    "growth_trajectory": "High",
+    "salary_range": "$120,000\u2013$155,000",
+    "description_summary": "AI Product Managers lead the development of AI-powered products, bridging the gap between business strategy, user needs, and the technical realities and limitations of machine learning systems. This is one of the newest and fastest-growing product management specializations, emerging from the recognition that effective AI product development requires a distinct skill set that traditional PMs often lack\u2014including the ability to scope ML use cases, define meaningful success metrics for probabilistic systems, and manage the unique uncertainties of AI development cycles.",
+    "full_text": "AI Product Manager IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Product & Strategy Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview AI Product Managers lead the development of AI-powered products, bridging the gap between business strategy, user needs, and the technical realities and limitations of machine learning systems. This is one of the newest and fastest-growing product management specializations, emerging from the recognition that effective AI product development requires a distinct skill set that traditional PMs often lack\u2014including the ability to scope ML use cases, define meaningful success metrics for probabilistic systems, and manage the unique uncertainties of AI development cycles. What the Role Involves Responsibilities include identifying and prioritizing AI opportunities within the product portfolio, defining evaluation criteria for model performance and business impact, writing product requirements that specify acceptable model behavior (precision, recall, fairness targets), working with data scientists and ML engineers to scope technically feasible solutions, designing feedback loops for continuous model improvement, managing stakeholder expectations about AI capabilities and limitations, and ensuring responsible AI practices (fairness, transparency, accountability) are embedded in the product. AI PMs also navigate regulatory compliance (EU AI Act, GDPR) as part of product planning. Key Skills Required Foundational PM skills (user research, prioritization, roadmapping, stakeholder management) combined with ML literacy (understanding training data requirements, evaluation metrics, model limitations, and the AI development cycle) define the role. Proficiency in data analysis and the ability to speak credibly with data scientists and engineers are critical differentiators. Soft skills: the ability to communicate probabilistic outcomes to stakeholders who expect deterministic software behavior, and the intellectual honesty to acknowledge what an AI system cannot do. What Kind of Person Tends to Succeed Effective AI PMs are curious about technology and can rapidly acquire enough understanding of new ML capabilities to evaluate their product potential. They are comfortable with ambiguity\u2014AI product development is fundamentally more uncertain than traditional software. They possess business intuition, user empathy, and enough quantitative reasoning to evaluate ML metrics meaningfully. They are also ethical leaders who advocate for responsible AI practices. Career Progression Associate PM \u2192 PM \u2192 Senior PM \u2192 Principal PM / Group PM \u2192 Director of AI Product \u2192 VP of Product / CPO. Within AI companies, the IC PM track extends through Distinguished PM and VP Product. Salary Range & Annual Growth U.S. salaries: $120,000\u2013$155,000 (mid-level PM), $160,000\u2013$210,000 (senior PM), $215,000\u2013$320,000+ (principal/director with equity at AI companies). Annual salary growth of 9\u201314% is projected, driven by the explosion of AI product initiatives across every industry. Data Sources LinkedIn Emerging Jobs Report (2024) Lenny's Newsletter \u2013 AI PM Salary Survey (2024) McKinsey \u2013 The State of AI in Organizations (2024) ProductBoard PM Trends Survey (2024) O'Reilly AI & ML Trends Report (2024) Glassdoor \u2013 AI Product Manager Salaries (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "AI Product Managers lead the development of AI-powered products, bridging the gap between business strategy, user needs, and the technical realities and limitations of machine learning systems. This is one of the newest and fastest-growing product management specializations, emerging from the recognition that effective AI product development requires a distinct skill set that traditional PMs often lack\u2014including the ability to scope ML use cases, define meaningful success metrics for probabilistic systems, and manage the unique uncertainties of AI development cycles.",
+      "what": "Effective AI PMs are curious about technology and can rapidly acquire enough understanding of new ML capabilities to evaluate their product potential. They are comfortable with ambiguity\u2014AI product development is fundamentally more uncertain than traditional software. They possess business intuition, user empathy, and enough quantitative reasoning to evaluate ML metrics meaningfully. They are also ethical leaders who advocate for responsible AI practices.",
+      "key": "Foundational PM skills (user research, prioritization, roadmapping, stakeholder management) combined with ML literacy (understanding training data requirements, evaluation metrics, model limitations, and the AI development cycle) define the role. Proficiency in data analysis and the ability to speak credibly with data scientists and engineers are critical differentiators. Soft skills: the ability to communicate probabilistic outcomes to stakeholders who expect deterministic software behavior, and the intellectual honesty to acknowledge what an AI system cannot do.",
+      "career": "Associate PM \u2192 PM \u2192 Senior PM \u2192 Principal PM / Group PM \u2192 Director of AI Product \u2192 VP of Product / CPO. Within AI companies, the IC PM track extends through Distinguished PM and VP Product.",
+      "salary": "U.S. salaries: $120,000\u2013$155,000 (mid-level PM), $160,000\u2013$210,000 (senior PM), $215,000\u2013$320,000+ (principal/director with equity at AI companies). Annual salary growth of 9\u201314% is projected, driven by the explosion of AI product initiatives across every industry.",
+      "data": "LinkedIn Emerging Jobs Report (2024) Lenny's Newsletter \u2013 AI PM Salary Survey (2024) McKinsey \u2013 The State of AI in Organizations (2024) ProductBoard PM Trends Survey (2024) O'Reilly AI & ML Trends Report (2024) Glassdoor \u2013 AI Product Manager Salaries (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "27_Technical_Product_Manager",
+    "role_name": "Technical Product Manager",
+    "role_family": "Product & Strategy",
+    "required_hard_skills": [
+      "GraphQL",
+      "gRPC",
+      "CI/CD",
+      "Stakeholder Management",
+      "Excel"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "Moderate",
+      "extraversion": "Moderate",
+      "agreeableness": "Low",
+      "neuroticism": "High"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "High",
+      "leadership_growth": "High",
+      "dynamic_environment": "Moderate"
+    },
+    "seniority_level": "Mid",
+    "avg_ramp_up_months": 9,
+    "growth_trajectory": "High",
+    "salary_range": "$120,000\u2013$155,000",
+    "description_summary": "Technical Product Managers (TPMs) lead the development of platform, API, infrastructure, and developer-facing products, translating complex technical capabilities and constraints into product strategies that serve both internal engineering teams and external developers. As companies build developer ecosystems, developer experience platforms, and API-first products, TPMs who can speak fluently to both engineers and business stakeholders have become indispensable. The role sits at the intersection of product management and software architecture.",
+    "full_text": "Technical Product Manager IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Product & Strategy Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview Technical Product Managers (TPMs) lead the development of platform, API, infrastructure, and developer-facing products, translating complex technical capabilities and constraints into product strategies that serve both internal engineering teams and external developers. As companies build developer ecosystems, developer experience platforms, and API-first products, TPMs who can speak fluently to both engineers and business stakeholders have become indispensable. The role sits at the intersection of product management and software architecture. What the Role Involves Work includes defining and maintaining product roadmaps for developer platforms, APIs, and infrastructure services, working closely with engineering teams to understand technical feasibility and trade-offs, writing product requirements that are technically precise, defining and tracking API usage metrics and developer adoption KPIs, managing developer relations and external developer community feedback loops, and coordinating platform deprecation and migration strategies. TPMs also often own internal developer tooling products\u2014IDEs, CI/CD platforms, testing frameworks\u2014that improve developer productivity. Key Skills Required Core PM competencies (roadmapping, prioritization, stakeholder management) plus meaningful software engineering experience\u2014typically 2+ years writing production code\u2014are the defining combination. Understanding of distributed systems, API design (REST, GraphQL, gRPC), cloud platforms, and developer workflows enables credible technical product decisions. Soft skills: the ability to build consensus between engineering teams with competing priorities and to write product requirements at a level of precision that engineers respect. What Kind of Person Tends to Succeed TPMs who excel are often engineers who discovered a passion for product strategy, or PMs with unusually deep technical curiosity. They thrive in the complexity of platform problems\u2014where the customer is another engineer, user stories are less intuitive, and success metrics are more abstract. They are strong synthesizers who can hold the technical detail and the product strategy in mind simultaneously. Career Progression Software Engineer or PM \u2192 Technical PM \u2192 Senior TPM \u2192 Staff/Principal TPM \u2192 Group PM (Platform) \u2192 Director of Product (Platform) \u2192 VP of Product. TPM tracks at large companies (Amazon, Google, Microsoft) are highly formalized with dedicated leveling frameworks. Salary Range & Annual Growth U.S. salaries: $120,000\u2013$155,000 (TPM), $160,000\u2013$205,000 (senior), $210,000\u2013$300,000+ (principal/director with equity). Annual salary growth of 7\u201310% is projected, sustained by the ongoing expansion of developer platforms and API economy. Data Sources Pragmatic Institute PM Salary Survey (2024) LinkedIn \u2013 Technical PM Job Trends (2024) Glassdoor \u2013 Technical Product Manager Salaries (2024) ProductBoard TPM Benchmarking (2024) Lenny's Newsletter Product Compensation Report (2024) Amazon TPM Job Leveling Documentation (public, 2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "Technical Product Managers (TPMs) lead the development of platform, API, infrastructure, and developer-facing products, translating complex technical capabilities and constraints into product strategies that serve both internal engineering teams and external developers. As companies build developer ecosystems, developer experience platforms, and API-first products, TPMs who can speak fluently to both engineers and business stakeholders have become indispensable. The role sits at the intersection of product management and software architecture.",
+      "what": "TPMs who excel are often engineers who discovered a passion for product strategy, or PMs with unusually deep technical curiosity. They thrive in the complexity of platform problems\u2014where the customer is another engineer, user stories are less intuitive, and success metrics are more abstract. They are strong synthesizers who can hold the technical detail and the product strategy in mind simultaneously.",
+      "key": "Core PM competencies (roadmapping, prioritization, stakeholder management) plus meaningful software engineering experience\u2014typically 2+ years writing production code\u2014are the defining combination. Understanding of distributed systems, API design (REST, GraphQL, gRPC), cloud platforms, and developer workflows enables credible technical product decisions. Soft skills: the ability to build consensus between engineering teams with competing priorities and to write product requirements at a level of precision that engineers respect.",
+      "career": "Software Engineer or PM \u2192 Technical PM \u2192 Senior TPM \u2192 Staff/Principal TPM \u2192 Group PM (Platform) \u2192 Director of Product (Platform) \u2192 VP of Product. TPM tracks at large companies (Amazon, Google, Microsoft) are highly formalized with dedicated leveling frameworks.",
+      "salary": "U.S. salaries: $120,000\u2013$155,000 (TPM), $160,000\u2013$205,000 (senior), $210,000\u2013$300,000+ (principal/director with equity). Annual salary growth of 7\u201310% is projected, sustained by the ongoing expansion of developer platforms and API economy.",
+      "data": "Pragmatic Institute PM Salary Survey (2024) LinkedIn \u2013 Technical PM Job Trends (2024) Glassdoor \u2013 Technical Product Manager Salaries (2024) ProductBoard TPM Benchmarking (2024) Lenny's Newsletter Product Compensation Report (2024) Amazon TPM Job Leveling Documentation (public, 2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "30_Solutions_Architect",
+    "role_name": "Solutions Architect",
+    "role_family": "Architecture",
+    "required_hard_skills": [
+      "C",
+      "AWS",
+      "Azure",
+      "GCP",
+      "AI"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "Moderate",
+      "extraversion": "Moderate",
+      "agreeableness": "Moderate",
+      "neuroticism": "High"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "High",
+      "leadership_growth": "High",
+      "dynamic_environment": "Moderate"
+    },
+    "seniority_level": "Senior",
+    "avg_ramp_up_months": 12,
+    "growth_trajectory": "High",
+    "salary_range": "$120,000\u2013$155,000",
+    "description_summary": "Solutions Architects design technical solutions to specific customer or business problems, translating requirements into implementable architectures using a combination of technology components, platforms, and custom development. The role exists both within technology companies\u2014as customer-facing technical advisors (pre-sales and post-sales)\u2014and within enterprises, where internal Solutions Architects design cross-system solutions for complex business challenges. As technology stacks grow more complex and vendor landscapes more crowded, skilled Solutions Architects who can cut through complexit",
+    "full_text": "Solutions Architect IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Technical / Advisory Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview Solutions Architects design technical solutions to specific customer or business problems, translating requirements into implementable architectures using a combination of technology components, platforms, and custom development. The role exists both within technology companies\u2014as customer-facing technical advisors (pre-sales and post-sales)\u2014and within enterprises, where internal Solutions Architects design cross-system solutions for complex business challenges. As technology stacks grow more complex and vendor landscapes more crowded, skilled Solutions Architects who can cut through complexity to pragmatic, well-designed solutions are in consistently high demand. What the Role Involves Work includes conducting discovery sessions with stakeholders to understand business and technical requirements, designing end-to-end technical architectures, producing architecture documents and diagrams, evaluating and recommending technology platforms and vendors, creating proof-of-concept implementations, presenting solutions to technical and non-technical audiences, and guiding implementation teams during delivery. Customer-facing Solutions Architects also develop SOWs (Statements of Work), manage technical aspects of RFP responses, and act as trusted technical advisors throughout the customer lifecycle. Key Skills Required Broad technical depth across at least one major domain (cloud, data, security, networking, AI) combined with excellent communication and presentation skills. The ability to whiteboard complex architectures, create clear technical documentation, and translate business requirements into technical designs is core. Customer-facing roles require consultative selling skills, executive presence, and the ability to build trust rapidly. Relevant certifications (AWS, GCP, Azure, Salesforce) and vertical industry knowledge add significant value. What Kind of Person Tends to Succeed Solutions Architects are natural connectors\u2014they enjoy the intellectual puzzle of fitting the right technology to a specific problem. They are excellent listeners who ask the right questions before jumping to solutions. They are comfortable presenting to both engineers and C-suite executives and can adjust their communication register accordingly. They are energized by variety, as each engagement brings different technical challenges and business contexts. Career Progression Senior Engineer \u2192 Solutions Architect \u2192 Senior Solutions Architect \u2192 Principal Solutions Architect \u2192 Distinguished Architect or Director of Solutions Architecture. Customer-facing roles at cloud providers (AWS, GCP, Azure) are particularly prestigious and well-compensated. Salary Range & Annual Growth U.S. salaries: $120,000\u2013$155,000 (associate/mid), $160,000\u2013$210,000 (senior), $215,000\u2013$300,000+ (principal with OTE including variable). Annual salary growth of 7\u201310% is projected, consistent with enterprise technology investment growth. Data Sources AWS Solutions Architect Job Market Report (2024) Glassdoor \u2013 Solutions Architect Salary Data (2024) LinkedIn Jobs on the Rise Report (2024) Gartner Enterprise Architecture Trends (2024) Forrester \u2013 Enterprise Architecture Research (2024) CompTIA IT Industry Workforce Report (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "Solutions Architects design technical solutions to specific customer or business problems, translating requirements into implementable architectures using a combination of technology components, platforms, and custom development. The role exists both within technology companies\u2014as customer-facing technical advisors (pre-sales and post-sales)\u2014and within enterprises, where internal Solutions Architects design cross-system solutions for complex business challenges. As technology stacks grow more complex and vendor landscapes more crowded, skilled Solutions Architects who can cut through complexity to pragmatic, well-designed solutions are in consistently high demand.",
+      "what": "Solutions Architects are natural connectors\u2014they enjoy the intellectual puzzle of fitting the right technology to a specific problem. They are excellent listeners who ask the right questions before jumping to solutions. They are comfortable presenting to both engineers and C-suite executives and can adjust their communication register accordingly. They are energized by variety, as each engagement brings different technical challenges and business contexts.",
+      "key": "Broad technical depth across at least one major domain (cloud, data, security, networking, AI) combined with excellent communication and presentation skills. The ability to whiteboard complex architectures, create clear technical documentation, and translate business requirements into technical designs is core. Customer-facing roles require consultative selling skills, executive presence, and the ability to build trust rapidly. Relevant certifications (AWS, GCP, Azure, Salesforce) and vertical industry knowledge add significant value.",
+      "career": "Senior Engineer \u2192 Solutions Architect \u2192 Senior Solutions Architect \u2192 Principal Solutions Architect \u2192 Distinguished Architect or Director of Solutions Architecture. Customer-facing roles at cloud providers (AWS, GCP, Azure) are particularly prestigious and well-compensated.",
+      "salary": "U.S. salaries: $120,000\u2013$155,000 (associate/mid), $160,000\u2013$210,000 (senior), $215,000\u2013$300,000+ (principal with OTE including variable). Annual salary growth of 7\u201310% is projected, consistent with enterprise technology investment growth.",
+      "data": "AWS Solutions Architect Job Market Report (2024) Glassdoor \u2013 Solutions Architect Salary Data (2024) LinkedIn Jobs on the Rise Report (2024) Gartner Enterprise Architecture Trends (2024) Forrester \u2013 Enterprise Architecture Research (2024) CompTIA IT Industry Workforce Report (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "32_Engineering_Manager",
+    "role_name": "Engineering Manager",
+    "role_family": "Leadership",
+    "required_hard_skills": [
+      "Performance Reviews",
+      "Hiring",
+      "AI"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "Moderate",
+      "extraversion": "High",
+      "agreeableness": "Moderate",
+      "neuroticism": "Moderate"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "High",
+      "leadership_growth": "High",
+      "dynamic_environment": "Moderate"
+    },
+    "seniority_level": "Lead",
+    "avg_ramp_up_months": 18,
+    "growth_trajectory": "High",
+    "salary_range": "$140,000\u2013$175,000",
+    "description_summary": "Engineering Managers lead software engineering teams, balancing technical direction, people development, project delivery, and cross-functional collaboration. As organizations scale their engineering capabilities and navigate the complexity of AI-assisted development, effective Engineering Managers become a critical bottleneck\u2014or accelerant\u2014for engineering performance. The transition from individual contributor to manager is one of the most significant and challenging career pivots in tech, but those who navigate it well are handsomely rewarded.",
+    "full_text": "Engineering Manager IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Leadership Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview Engineering Managers lead software engineering teams, balancing technical direction, people development, project delivery, and cross-functional collaboration. As organizations scale their engineering capabilities and navigate the complexity of AI-assisted development, effective Engineering Managers become a critical bottleneck\u2014or accelerant\u2014for engineering performance. The transition from individual contributor to manager is one of the most significant and challenging career pivots in tech, but those who navigate it well are handsomely rewarded. What the Role Involves Day-to-day responsibilities include conducting regular 1:1s with direct reports, setting technical direction for the team, participating in system design reviews, managing hiring and interview processes, owning team delivery commitments, escalating and unblocking impediments, managing performance reviews and compensation decisions, fostering psychological safety and a culture of learning, and coordinating with product managers and other engineering teams. Engineering Managers also communicate upward\u2014providing status, surfacing risks, and representing their team's interests in leadership forums. Key Skills Required A solid technical foundation (usually 5+ years of software engineering experience) combined with people leadership skills is the baseline. Key competencies include active listening, coaching and mentorship, difficult feedback delivery, conflict resolution, and the ability to drive performance without micromanagement. Technical credibility\u2014enough to evaluate code quality, architecture decisions, and technical hiring candidates\u2014is important but should not dominate at the expense of leadership focus. What Kind of Person Tends to Succeed The best Engineering Managers are primarily motivated by the success of others\u2014they measure their own impact through their team's outcomes, not personal technical contributions. They are excellent listeners who create the conditions for their team to do their best work. They are comfortable with ambiguity and able to prioritize ruthlessly. They invest in their own management skill development as diligently as they once invested in technical skills. Career Progression Senior Engineer \u2192 Engineering Manager \u2192 Senior Engineering Manager \u2192 Director of Engineering \u2192 VP of Engineering \u2192 SVP/CTO. Span of control (number of reports, team count) typically increases with each level. Many EMs return to the IC track if they find management is not fulfilling. Salary Range & Annual Growth U.S. salaries: $140,000\u2013$175,000 (EM), $180,000\u2013$230,000 (senior EM/director), $235,000\u2013$400,000+ (VP with equity). Annual salary growth of 7\u201310% is projected, reflecting sustained demand as engineering organizations expand. Data Sources Glassdoor \u2013 Engineering Manager Salary Data (2024) Levels.fyi \u2013 Engineering Manager Compensation (2024) Rands Leadership Slack Community Survey (2024) Will Larson's 'An Elegant Puzzle' \u2013 Engineering Management Benchmarks LinkedIn Engineering Leadership Trends (2024) Heidrick & Struggles Engineering Leadership Compensation Survey (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "Engineering Managers lead software engineering teams, balancing technical direction, people development, project delivery, and cross-functional collaboration. As organizations scale their engineering capabilities and navigate the complexity of AI-assisted development, effective Engineering Managers become a critical bottleneck\u2014or accelerant\u2014for engineering performance. The transition from individual contributor to manager is one of the most significant and challenging career pivots in tech, but those who navigate it well are handsomely rewarded.",
+      "what": "The best Engineering Managers are primarily motivated by the success of others\u2014they measure their own impact through their team's outcomes, not personal technical contributions. They are excellent listeners who create the conditions for their team to do their best work. They are comfortable with ambiguity and able to prioritize ruthlessly. They invest in their own management skill development as diligently as they once invested in technical skills.",
+      "key": "A solid technical foundation (usually 5+ years of software engineering experience) combined with people leadership skills is the baseline. Key competencies include active listening, coaching and mentorship, difficult feedback delivery, conflict resolution, and the ability to drive performance without micromanagement. Technical credibility\u2014enough to evaluate code quality, architecture decisions, and technical hiring candidates\u2014is important but should not dominate at the expense of leadership focus.",
+      "career": "Senior Engineer \u2192 Engineering Manager \u2192 Senior Engineering Manager \u2192 Director of Engineering \u2192 VP of Engineering \u2192 SVP/CTO. Span of control (number of reports, team count) typically increases with each level. Many EMs return to the IC track if they find management is not fulfilling.",
+      "salary": "U.S. salaries: $140,000\u2013$175,000 (EM), $180,000\u2013$230,000 (senior EM/director), $235,000\u2013$400,000+ (VP with equity). Annual salary growth of 7\u201310% is projected, reflecting sustained demand as engineering organizations expand.",
+      "data": "Glassdoor \u2013 Engineering Manager Salary Data (2024) Levels.fyi \u2013 Engineering Manager Compensation (2024) Rands Leadership Slack Community Survey (2024) Will Larson's 'An Elegant Puzzle' \u2013 Engineering Management Benchmarks LinkedIn Engineering Leadership Trends (2024) Heidrick & Struggles Engineering Leadership Compensation Survey (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "36_UX_Product_Designer",
+    "role_name": "UX / Product Designer",
+    "role_family": "Design",
+    "required_hard_skills": [
+      "Figma",
+      "Sketch",
+      "User Research",
+      "Usability Testing",
+      "Design Systems",
+      "Accessibility",
+      "A/B Testing",
+      "AI"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "Moderate",
+      "extraversion": "Low",
+      "agreeableness": "Moderate",
+      "neuroticism": "Moderate"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "Moderate",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "High",
+      "leadership_growth": "High",
+      "dynamic_environment": "High"
+    },
+    "seniority_level": "Mid",
+    "avg_ramp_up_months": 8,
+    "growth_trajectory": "High",
+    "salary_range": "$75,000\u2013$105,000",
+    "description_summary": "UX and Product Designers craft the user experiences and visual interfaces for digital products\u2014ensuring that software is not only functional but intuitive, accessible, and enjoyable to use. As competition for user attention intensifies and AI capabilities create new interaction paradigms (voice, conversational UI, adaptive personalization), skilled designers who can navigate the complexity of human-centered design at scale are in high demand. The next decade will see designers increasingly responsible for designing AI-augmented experiences where the interface itself adapts to user behavior.",
+    "full_text": "UX / Product Designer IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Design Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview UX and Product Designers craft the user experiences and visual interfaces for digital products\u2014ensuring that software is not only functional but intuitive, accessible, and enjoyable to use. As competition for user attention intensifies and AI capabilities create new interaction paradigms (voice, conversational UI, adaptive personalization), skilled designers who can navigate the complexity of human-centered design at scale are in high demand. The next decade will see designers increasingly responsible for designing AI-augmented experiences where the interface itself adapts to user behavior. What the Role Involves Core activities include conducting user research (interviews, usability testing, surveys), creating user journey maps, wireframes, and interactive prototypes (Figma, Sketch), collaborating with product managers to define requirements, working with engineers to implement designs with fidelity, establishing and maintaining design systems, conducting accessibility audits, and iterating on designs based on quantitative data (analytics, A/B testing) and qualitative feedback. Increasingly, UX Designers are involved in AI feature design\u2014creating interactions for chatbots, recommendation systems, and AI-generated content. Key Skills Required Proficiency in Figma (the industry-standard design tool), competency in conducting user research methodologies, understanding of design systems and component libraries, basic HTML/CSS literacy for cross-functional collaboration, and accessibility standards (WCAG 2.1/2.2) are foundational. Knowledge of motion design, conversational UI design, and design analytics tools (Hotjar, FullStory) distinguishes senior designers. Soft skills: exceptional communication and the ability to defend design decisions with evidence while remaining open to iteration. What Kind of Person Tends to Succeed Great UX Designers have deep empathy for users and an almost missionary zeal for removing friction from human-computer interaction. They are equally comfortable in the messy qualitative world of user research and the precise quantitative world of A/B testing. They advocate for users in product discussions and are comfortable doing so even when user needs conflict with business preferences. They maintain high aesthetic standards while pragmatically balancing delivery constraints. Career Progression Junior UX Designer \u2192 UX Designer \u2192 Senior UX Designer \u2192 Lead/Principal UX Designer \u2192 UX Director \u2192 VP of Design / Chief Design Officer. Specializations include service design, interaction design, design systems, and AI/conversational design. Salary Range & Annual Growth U.S. salaries: $75,000\u2013$105,000 (junior-mid), $110,000\u2013$155,000 (senior), $160,000\u2013$240,000+ (lead/director at top tech). Annual salary growth of 6\u20139% is projected, with AI interaction design specialists at the premium end. Data Sources Adobe Digital Trends Report (2024) Figma Config Conference Insights (2024) Nielsen Norman Group UX Salary Survey (2024) Glassdoor \u2013 UX Designer Salary Data (2024) LinkedIn Most In-Demand Design Skills (2024) IDEO Design Workforce Trends (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "UX and Product Designers craft the user experiences and visual interfaces for digital products\u2014ensuring that software is not only functional but intuitive, accessible, and enjoyable to use. As competition for user attention intensifies and AI capabilities create new interaction paradigms (voice, conversational UI, adaptive personalization), skilled designers who can navigate the complexity of human-centered design at scale are in high demand. The next decade will see designers increasingly responsible for designing AI-augmented experiences where the interface itself adapts to user behavior.",
+      "what": "Great UX Designers have deep empathy for users and an almost missionary zeal for removing friction from human-computer interaction. They are equally comfortable in the messy qualitative world of user research and the precise quantitative world of A/B testing. They advocate for users in product discussions and are comfortable doing so even when user needs conflict with business preferences. They maintain high aesthetic standards while pragmatically balancing delivery constraints.",
+      "key": "Proficiency in Figma (the industry-standard design tool), competency in conducting user research methodologies, understanding of design systems and component libraries, basic HTML/CSS literacy for cross-functional collaboration, and accessibility standards (WCAG 2.1/2.2) are foundational. Knowledge of motion design, conversational UI design, and design analytics tools (Hotjar, FullStory) distinguishes senior designers. Soft skills: exceptional communication and the ability to defend design decisions with evidence while remaining open to iteration.",
+      "career": "Junior UX Designer \u2192 UX Designer \u2192 Senior UX Designer \u2192 Lead/Principal UX Designer \u2192 UX Director \u2192 VP of Design / Chief Design Officer. Specializations include service design, interaction design, design systems, and AI/conversational design.",
+      "salary": "U.S. salaries: $75,000\u2013$105,000 (junior-mid), $110,000\u2013$155,000 (senior), $160,000\u2013$240,000+ (lead/director at top tech). Annual salary growth of 6\u20139% is projected, with AI interaction design specialists at the premium end.",
+      "data": "Adobe Digital Trends Report (2024) Figma Config Conference Insights (2024) Nielsen Norman Group UX Salary Survey (2024) Glassdoor \u2013 UX Designer Salary Data (2024) LinkedIn Most In-Demand Design Skills (2024) IDEO Design Workforce Trends (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "38_IT_Business_Analyst",
+    "role_name": "IT Business Analyst",
+    "role_family": "Analysis & Consulting",
+    "required_hard_skills": [
+      "SQL",
+      "Power BI",
+      "Tableau",
+      "Agile",
+      "Scrum",
+      "Kanban",
+      "SAFe",
+      "Stakeholder Management",
+      "JIRA",
+      "Confluence",
+      "Business Analysis",
+      "Use Cases",
+      "UAT",
+      "BPMN",
+      "AI"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "High",
+      "extraversion": "Moderate",
+      "agreeableness": "Low",
+      "neuroticism": "High"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "High",
+      "leadership_growth": "High",
+      "dynamic_environment": "High"
+    },
+    "seniority_level": "Mid",
+    "avg_ramp_up_months": 6,
+    "growth_trajectory": "High",
+    "salary_range": "$70,000\u2013$95,000",
+    "description_summary": "IT Business Analysts bridge the gap between business stakeholders and technology teams, translating business needs into clear technical requirements that enable effective software development and digital transformation. The role is foundational to every large-scale technology program and enterprise system implementation. As AI and automation change how IT solutions are built and deployed, business analysts who understand both the evolving technical landscape and the human dimensions of change will remain indispensable.",
+    "full_text": "IT Business Analyst IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Analysis & Consulting Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview IT Business Analysts bridge the gap between business stakeholders and technology teams, translating business needs into clear technical requirements that enable effective software development and digital transformation. The role is foundational to every large-scale technology program and enterprise system implementation. As AI and automation change how IT solutions are built and deployed, business analysts who understand both the evolving technical landscape and the human dimensions of change will remain indispensable. What the Role Involves Core activities include eliciting and documenting business and functional requirements (user stories, use cases, process flows), facilitating workshops and interviews with stakeholders, creating and managing product backlogs, performing gap analyses between current and future state processes, mapping data requirements for system integrations, participating in user acceptance testing (UAT), managing scope change processes, and creating business cases for technology investments. Senior BAs also perform process redesign, develop feasibility analyses, and advise on technology selection. Key Skills Required Requirements elicitation and documentation, process modeling (BPMN, UML), stakeholder management, facilitation, analytical thinking, and proficiency in collaboration tools (Confluence, Jira, Miro) are foundational. Familiarity with agile development methodologies (SAFe, Scrum, Kanban) and increasing comfort with data analysis tools (SQL, Tableau, Power BI) distinguishes senior practitioners. Certifications such as CBAP (Certified Business Analysis Professional) or PMI-PBA are recognized credentials. Soft skills: active listening, diplomatic communication, and the ability to resolve conflicting stakeholder requirements. What Kind of Person Tends to Succeed Excellent Business Analysts are curious about how things work\u2014how business processes create value, how data flows through systems, how technology can improve operational efficiency. They are patient, thorough documentarians who ensure nothing falls through the cracks between business intent and technical implementation. They are naturally diplomatic, able to facilitate agreement between stakeholders with competing priorities without losing the thread of the project goal. Career Progression Junior BA \u2192 Business Analyst \u2192 Senior BA \u2192 Lead BA / BA Manager \u2192 Product Owner or Product Manager \u2192 Director of Business Analysis or Head of Digital Programs. Salary Range & Annual Growth U.S. salaries: $70,000\u2013$95,000 (junior-mid), $100,000\u2013$135,000 (senior), $140,000\u2013$185,000 (lead/director). Annual salary growth of 5\u20138% is projected, consistent with sustained enterprise technology program demand. Data Sources IIBA Global Business Analysis Salary Survey (2024) Glassdoor \u2013 IT Business Analyst Salaries (2024) LinkedIn Business Analysis Job Trends (2024) PMI Pulse of the Profession (2024) CompTIA IT Industry Outlook (2024) Gartner Digital Business Analysis Trends (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "IT Business Analysts bridge the gap between business stakeholders and technology teams, translating business needs into clear technical requirements that enable effective software development and digital transformation. The role is foundational to every large-scale technology program and enterprise system implementation. As AI and automation change how IT solutions are built and deployed, business analysts who understand both the evolving technical landscape and the human dimensions of change will remain indispensable.",
+      "what": "Excellent Business Analysts are curious about how things work\u2014how business processes create value, how data flows through systems, how technology can improve operational efficiency. They are patient, thorough documentarians who ensure nothing falls through the cracks between business intent and technical implementation. They are naturally diplomatic, able to facilitate agreement between stakeholders with competing priorities without losing the thread of the project goal.",
+      "key": "Requirements elicitation and documentation, process modeling (BPMN, UML), stakeholder management, facilitation, analytical thinking, and proficiency in collaboration tools (Confluence, Jira, Miro) are foundational. Familiarity with agile development methodologies (SAFe, Scrum, Kanban) and increasing comfort with data analysis tools (SQL, Tableau, Power BI) distinguishes senior practitioners. Certifications such as CBAP (Certified Business Analysis Professional) or PMI-PBA are recognized credentials. Soft skills: active listening, diplomatic communication, and the ability to resolve conflicting stakeholder requirements.",
+      "career": "Junior BA \u2192 Business Analyst \u2192 Senior BA \u2192 Lead BA / BA Manager \u2192 Product Owner or Product Manager \u2192 Director of Business Analysis or Head of Digital Programs.",
+      "salary": "U.S. salaries: $70,000\u2013$95,000 (junior-mid), $100,000\u2013$135,000 (senior), $140,000\u2013$185,000 (lead/director). Annual salary growth of 5\u20138% is projected, consistent with sustained enterprise technology program demand.",
+      "data": "IIBA Global Business Analysis Salary Survey (2024) Glassdoor \u2013 IT Business Analyst Salaries (2024) LinkedIn Business Analysis Job Trends (2024) PMI Pulse of the Profession (2024) CompTIA IT Industry Outlook (2024) Gartner Digital Business Analysis Trends (2024)",
+      "note": ""
+    }
+  },
+  {
+    "career_id": "45_Product_Manager_General_Technology",
+    "role_name": "Product Manager (General Technology)",
+    "role_family": "Product & Strategy",
+    "required_hard_skills": [
+      "SQL",
+      "Tableau",
+      "User Research",
+      "OKRs",
+      "Stakeholder Management",
+      "Machine Learning",
+      "AI"
+    ],
+    "required_traits": {
+      "openness": "Moderate",
+      "conscientiousness": "Moderate",
+      "extraversion": "Moderate",
+      "agreeableness": "Moderate",
+      "neuroticism": "High"
+    },
+    "work_style": {
+      "realistic": "High",
+      "investigative": "High",
+      "artistic": "High",
+      "social": "High",
+      "enterprising": "High",
+      "conventional": "High"
+    },
+    "work_values": {
+      "collaboration": "High",
+      "problem_solving": "Moderate",
+      "leadership_growth": "High",
+      "dynamic_environment": "Moderate"
+    },
+    "seniority_level": "Mid",
+    "avg_ramp_up_months": 9,
+    "growth_trajectory": "High",
+    "salary_range": "$100,000\u2013$130,000",
+    "description_summary": "Product Managers define what technology products are built, for whom, and why. They own the product vision, strategy, and roadmap, and are accountable for the product's business outcomes. Often described as the \"CEO of the product,\" PMs make the hard prioritization decisions that determine where engineering capacity is invested. As software eating the world accelerates and as every company becomes a technology company to some degree, skilled Product Managers who can synthesize user needs, business strategy, and technical possibilities are among the most sought-after professionals in the indust",
+    "full_text": "Product Manager (General Technology) IT Workforce Profile | 10-Year Outlook (2025\u20132035) Role Category Product & Strategy Salary Growth (YoY) See Salary section below Remote Friendly High (majority of roles) Overview Product Managers define what technology products are built, for whom, and why. They own the product vision, strategy, and roadmap, and are accountable for the product's business outcomes. Often described as the \"CEO of the product,\" PMs make the hard prioritization decisions that determine where engineering capacity is invested. As software eating the world accelerates and as every company becomes a technology company to some degree, skilled Product Managers who can synthesize user needs, business strategy, and technical possibilities are among the most sought-after professionals in the industry. What the Role Involves Core activities include market and user research, defining product strategy and OKRs, managing the product backlog, writing product requirements (PRDs, user stories), prioritizing features, leading cross-functional product squads (designers, engineers, data analysts), communicating product strategy to leadership, defining success metrics and tracking them post-launch, managing the product's commercial performance, and representing the voice of the customer in engineering decisions. Modern PMs also manage AI feature development increasingly, requiring ML literacy. Key Skills Required User research methodologies, data analysis (SQL, Tableau, product analytics tools like Amplitude or Mixpanel), stakeholder management, prioritization frameworks (RICE, ICE, MoSCoW), writing clear PRDs, and product strategy are foundational. Domain expertise in the product's market, combined with enough technical literacy to converse credibly with engineers, is a critical combination. Soft skills\u2014leadership without authority, storytelling, and the ability to say \"no\" diplomatically\u2014define excellent PMs. What Kind of Person Tends to Succeed Outstanding Product Managers are driven by user impact and are endlessly curious about the problems they are solving. They have strong opinions but hold them loosely, updating them rapidly when faced with new data. They are natural collaborators who build trust across engineering, design, and business functions. They are comfortable making decisions with incomplete information and communicating those decisions with clarity and conviction. Career Progression Associate PM \u2192 PM \u2192 Senior PM \u2192 Principal PM / Group PM \u2192 Director of Product \u2192 VP of Product \u2192 CPO. PM tracks at major tech companies (Google APM, Facebook RPM, Microsoft MSPMP) are highly formalized. Many CPOs and founders began in general PM roles. Salary Range & Annual Growth U.S. salaries: $100,000\u2013$130,000 (PM), $135,000\u2013$175,000 (senior PM), $180,000\u2013$280,000+ (principal/director with equity at top tech). Annual salary growth of 6\u20139% is projected, consistent with software product development demand. Data Sources Pragmatic Institute PM Salary Survey (2024) Lenny's Newsletter PM Compensation Report (2024) Glassdoor \u2013 Product Manager Salary Data (2024) ProductBoard PM Productivity Report (2024) LinkedIn Most In-Demand Roles: Product Manager (2024) Harvard Business Review \u2013 The Art of Product Management (2024) Note: Salary data reflects U.S. market conditions as of 2024\u20132025. Figures are approximate ranges based on aggregated market data. Compensation varies significantly by company size, geography, industry vertical, and individual experience. This document is intended for career planning and market research purposes.",
+    "sections": {
+      "overview": "Product Managers define what technology products are built, for whom, and why. They own the product vision, strategy, and roadmap, and are accountable for the product's business outcomes. Often described as the \"CEO of the product,\" PMs make the hard prioritization decisions that determine where engineering capacity is invested. As software eating the world accelerates and as every company becomes a technology company to some degree, skilled Product Managers who can synthesize user needs, business strategy, and technical possibilities are among the most sought-after professionals in the industry.",
+      "what": "Outstanding Product Managers are driven by user impact and are endlessly curious about the problems they are solving. They have strong opinions but hold them loosely, updating them rapidly when faced with new data. They are natural collaborators who build trust across engineering, design, and business functions. They are comfortable making decisions with incomplete information and communicating those decisions with clarity and conviction.",
+      "key": "User research methodologies, data analysis (SQL, Tableau, product analytics tools like Amplitude or Mixpanel), stakeholder management, prioritization frameworks (RICE, ICE, MoSCoW), writing clear PRDs, and product strategy are foundational. Domain expertise in the product's market, combined with enough technical literacy to converse credibly with engineers, is a critical combination. Soft skills\u2014leadership without authority, storytelling, and the ability to say \"no\" diplomatically\u2014define excellent PMs.",
+      "career": "Associate PM \u2192 PM \u2192 Senior PM \u2192 Principal PM / Group PM \u2192 Director of Product \u2192 VP of Product \u2192 CPO. PM tracks at major tech companies (Google APM, Facebook RPM, Microsoft MSPMP) are highly formalized. Many CPOs and founders began in general PM roles.",
+      "salary": "U.S. salaries: $100,000\u2013$130,000 (PM), $135,000\u2013$175,000 (senior PM), $180,000\u2013$280,000+ (principal/director with equity at top tech). Annual salary growth of 6\u20139% is projected, consistent with software product development demand.",
+      "data": "Pragmatic Institute PM Salary Survey (2024) Lenny's Newsletter PM Compensation Report (2024) Glassdoor \u2013 Product Manager Salary Data (2024) ProductBoard PM Productivity Report (2024) LinkedIn Most In-Demand Roles: Product Manager (2024) Harvard Business Review \u2013 The Art of Product Management (2024)",
+      "note": ""
+    }
+  }
+]

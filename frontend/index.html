@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CareerInk — AI-Powered Career Transition</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0d0d0d; --paper: #f5f0e8; --cream: #ede7d5;
+    --accent: #c8502a; --accent2: #2a6ec8; --muted: #7a7060;
+    --light: #faf7f2; --border: #d8cfc0; --success: #2a8c5a; --warn: #c8502a;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'DM Sans',sans-serif; background:var(--paper); color:var(--ink); min-height:100vh; }
+  body::before { content:''; position:fixed; inset:0; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events:none; z-index:1000; }
+
+  /* ---- BUTTONS ---- */
+  .btn-primary { background:var(--ink); color:var(--paper); border:none; padding:12px 28px; font-family:'DM Sans',sans-serif; font-size:14px; font-weight:600; cursor:pointer; transition:all .2s; letter-spacing:.3px; }
+  .btn-primary:hover:not(:disabled) { background:var(--accent); transform:translateY(-1px); }
+  .btn-primary:disabled { opacity:.4; cursor:not-allowed; }
+  .btn-secondary { background:transparent; color:var(--ink); border:1.5px solid var(--ink); padding:12px 28px; font-family:'DM Sans',sans-serif; font-size:14px; font-weight:600; cursor:pointer; transition:all .2s; }
+  .btn-secondary:hover { background:var(--ink); color:var(--paper); }
+  .btn-sm { padding:8px 18px; font-size:13px; }
+
+  /* ---- NAV ---- */
+  nav { display:flex; align-items:center; justify-content:space-between; padding:24px 60px; border-bottom:1px solid var(--border); }
+  .logo { font-family:'Playfair Display',serif; font-size:28px; font-weight:700; letter-spacing:-.5px; }
+  .logo span { color:var(--accent); }
+  .nav-links { display:flex; gap:32px; align-items:center; }
+  .nav-links a { text-decoration:none; color:var(--muted); font-size:14px; font-weight:500; }
+
+  /* ---- LANDING ---- */
+  #landing { min-height:100vh; display:flex; flex-direction:column; }
+  .hero { flex:1; display:grid; grid-template-columns:1fr 1fr; gap:0; padding:80px 60px; align-items:center; }
+  .tag { display:inline-flex; align-items:center; gap:8px; background:var(--cream); border:1px solid var(--border); padding:6px 14px; font-size:12px; font-weight:600; letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin-bottom:28px; }
+  .tag-dot { width:6px; height:6px; background:var(--accent); border-radius:50%; }
+  h1 { font-family:'Playfair Display',serif; font-size:64px; line-height:1.05; font-weight:700; letter-spacing:-2px; margin-bottom:24px; }
+  h1 .line-accent { color:var(--accent); font-style:italic; }
+  .hero-sub { font-size:18px; color:var(--muted); line-height:1.7; max-width:440px; margin-bottom:40px; font-weight:300; }
+  .hero-actions { display:flex; gap:16px; align-items:center; }
+  .hero-right { display:flex; justify-content:flex-end; align-items:center; }
+  .hero-card { background:var(--light); border:1.5px solid var(--border); padding:36px; width:380px; position:relative; box-shadow:8px 8px 0 var(--cream); }
+  .hero-card::before { content:'CAREER MATCH'; position:absolute; top:-12px; left:24px; background:var(--accent); color:white; font-size:10px; font-weight:700; letter-spacing:1.5px; padding:4px 12px; }
+  .match-score { font-family:'DM Mono',monospace; font-size:40px; font-weight:500; color:var(--accent); line-height:1; margin-bottom:4px; }
+  .match-label { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; margin-bottom:16px; }
+  .match-role { font-family:'Playfair Display',serif; font-size:24px; font-weight:600; margin-bottom:8px; }
+  .match-from { font-size:13px; color:var(--muted); margin-bottom:24px; }
+  .match-bar-wrap { margin-bottom:16px; }
+  .match-bar-label { display:flex; justify-content:space-between; font-size:12px; font-weight:500; margin-bottom:6px; }
+  .match-bar { height:4px; background:var(--cream); position:relative; overflow:hidden; }
+  .match-bar-fill { height:100%; background:var(--ink); animation:fillBar 1.5s ease-out forwards; width:0; }
+  @keyframes fillBar { to { width:var(--w); } }
+  .match-skills { margin-top:24px; padding-top:20px; border-top:1px solid var(--border); display:flex; flex-wrap:wrap; gap:8px; }
+  .skill-chip { background:var(--cream); border:1px solid var(--border); padding:4px 12px; font-size:11px; font-weight:500; color:var(--muted); }
+  .skill-chip.new { background:var(--ink); color:var(--paper); border-color:var(--ink); }
+  .steps-bar { display:flex; padding:32px 60px; border-top:1px solid var(--border); background:var(--cream); }
+  .step-item { flex:1; padding:20px 24px; border-right:1px solid var(--border); }
+  .step-item:last-child { border-right:none; }
+  .step-num { font-family:'DM Mono',monospace; font-size:11px; color:var(--muted); letter-spacing:1px; margin-bottom:8px; }
+  .step-title { font-weight:600; font-size:15px; margin-bottom:4px; }
+  .step-desc { font-size:13px; color:var(--muted); }
+
+  /* ---- LOADING ---- */
+  .loading-overlay { position:fixed; inset:0; background:rgba(245,240,232,.95); display:none; flex-direction:column; align-items:center; justify-content:center; z-index:500; }
+  .loading-overlay.show { display:flex; }
+  .loader-logo { font-family:'Playfair Display',serif; font-size:32px; font-weight:700; margin-bottom:32px; }
+  .loader-logo span { color:var(--accent); }
+  .loader-bar { width:280px; height:2px; background:var(--cream); position:relative; overflow:hidden; }
+  .loader-fill { position:absolute; top:0; left:-100%; width:100%; height:100%; background:var(--ink); animation:loadSlide 1.5s ease-in-out infinite; }
+  @keyframes loadSlide { 0%{left:-100%} 100%{left:100%} }
+  .loader-text { margin-top:20px; font-size:13px; color:var(--muted); font-family:'DM Mono',monospace; }
+
+  /* ---- APP SHELL ---- */
+  #app { display:none; min-height:100vh; flex-direction:column; }
+  .app-header { display:flex; align-items:center; justify-content:space-between; padding:16px 48px; border-bottom:1px solid var(--border); background:var(--paper); position:sticky; top:0; z-index:100; }
+  .progress-steps { display:flex; align-items:center; gap:0; }
+  .prog-step { display:flex; align-items:center; gap:10px; padding:8px 20px; font-size:13px; font-weight:500; color:var(--muted); border:1.5px solid transparent; cursor:default; transition:all .3s; }
+  .prog-step.active { color:var(--ink); border-color:var(--ink); background:var(--cream); }
+  .prog-step.done { color:var(--success); }
+  .prog-step .step-circle { width:22px; height:22px; border-radius:50%; border:1.5px solid currentColor; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:700; font-family:'DM Mono',monospace; }
+  .prog-divider { width:32px; height:1px; background:var(--border); }
+  .app-body { flex:1; padding:48px; max-width:1100px; margin:0 auto; width:100%; }
+
+  /* ---- SECTION HEADERS ---- */
+  .section-header { margin-bottom:40px; }
+  .section-label { font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+  .section-title { font-family:'Playfair Display',serif; font-size:38px; font-weight:700; line-height:1.1; letter-spacing:-1px; }
+  .section-sub { font-size:16px; color:var(--muted); margin-top:10px; font-weight:300; }
+
+  /* ---- AGENT 1 ---- */
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:32px; }
+  .panel { background:var(--light); border:1.5px solid var(--border); padding:32px; }
+  .panel-title { font-weight:700; font-size:16px; margin-bottom:6px; display:flex; align-items:center; gap:10px; }
+  .panel-sub { font-size:13px; color:var(--muted); margin-bottom:24px; }
+
+  /* CV Input */
+  .cv-input-wrap { position:relative; }
+  textarea.cv-input { width:100%; height:220px; background:var(--paper); border:1.5px solid var(--border); padding:16px; font-family:'DM Mono',monospace; font-size:12px; color:var(--ink); resize:none; outline:none; line-height:1.7; }
+  textarea.cv-input:focus { border-color:var(--ink); }
+  .char-counter { display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-top:8px; font-family:'DM Mono',monospace; }
+  .char-counter.ready { color:var(--success); font-weight:600; }
+
+  /* Skills chips */
+  .skills-area { background:var(--paper); border:1.5px solid var(--border); padding:16px; min-height:80px; }
+  .skills-chips-row { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
+  .chip { display:inline-flex; align-items:center; gap:6px; background:var(--ink); color:var(--paper); padding:4px 10px; font-size:11px; font-weight:500; animation:fadeIn .3s ease; }
+  .chip.soft { background:var(--accent2); }
+  .chip .chip-x { cursor:pointer; opacity:.6; font-size:13px; line-height:1; }
+  .chip .chip-x:hover { opacity:1; }
+  .chip-input { border:none; background:transparent; font-family:'DM Mono',monospace; font-size:12px; color:var(--ink); outline:none; width:160px; placeholder:var(--muted); }
+  .chip-input::placeholder { color:var(--muted); }
+  @keyframes fadeIn { from{opacity:0;transform:translateY(4px)} to{opacity:1;transform:translateY(0)} }
+
+  /* Questionnaire */
+  .q-progress-bar { height:3px; background:var(--cream); margin-bottom:32px; }
+  .q-progress-fill { height:100%; background:var(--ink); transition:width .4s ease; }
+  .q-counter { font-family:'DM Mono',monospace; font-size:12px; color:var(--muted); margin-bottom:16px; }
+  .q-framework { font-size:11px; text-transform:uppercase; letter-spacing:1px; color:var(--accent); font-weight:700; margin-bottom:8px; }
+  .question-text { font-size:20px; font-weight:600; line-height:1.4; margin-bottom:32px; }
+  .likert-row { display:flex; gap:10px; align-items:center; justify-content:center; }
+  .likert-labels { display:flex; justify-content:space-between; margin-bottom:8px; font-size:11px; color:var(--muted); }
+  .likert-btn { width:52px; height:52px; border-radius:50%; border:1.5px solid var(--border); background:var(--paper); font-family:'DM Mono',monospace; font-size:14px; font-weight:600; cursor:pointer; transition:all .15s; color:var(--muted); display:flex; align-items:center; justify-content:center; }
+  .likert-btn:hover { border-color:var(--ink); color:var(--ink); background:var(--cream); }
+  .likert-btn.selected { border-color:var(--accent); background:var(--accent); color:white; transform:scale(1.1); }
+  .q-nav { display:flex; justify-content:space-between; align-items:center; margin-top:32px; }
+
+  /* Profile Summary */
+  .profile-card { background:var(--ink); color:var(--paper); padding:32px; margin-bottom:24px; }
+  .profile-badges { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
+  .badge { background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.2); padding:4px 12px; font-size:11px; font-weight:500; }
+  .trait-bars { display:grid; grid-template-columns:1fr 1fr; gap:12px 24px; margin-top:16px; }
+  .trait-bar-item { }
+  .trait-bar-label { display:flex; justify-content:space-between; font-size:11px; margin-bottom:4px; opacity:.8; }
+  .trait-bar-bg { height:3px; background:rgba(255,255,255,.15); }
+  .trait-bar-fill { height:100%; background:var(--accent); }
+
+  /* ---- AGENT 2: Career Cards ---- */
+  .career-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-bottom:32px; }
+  .career-card { background:var(--light); border:1.5px solid var(--border); padding:28px; cursor:pointer; transition:all .2s; position:relative; overflow:hidden; }
+  .career-card:hover { border-color:var(--ink); transform:translateY(-2px); box-shadow:4px 4px 0 var(--cream); }
+  .career-card.selected { border-color:var(--ink); background:var(--ink); color:var(--paper); }
+  .career-card::before { content:''; position:absolute; top:0;left:0;right:0; height:3px; background:var(--accent); transform:scaleX(0); transition:transform .3s; }
+  .career-card:hover::before, .career-card.selected::before { transform:scaleX(1); }
+  .career-score { font-family:'DM Mono',monospace; font-size:40px; font-weight:500; color:var(--accent); line-height:1; margin-bottom:4px; }
+  .career-card.selected .career-score { color:#ff8a6a; }
+  .career-match-label { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; margin-bottom:16px; }
+  .career-card.selected .career-match-label { color:rgba(255,255,255,.5); }
+  .career-name { font-family:'Playfair Display',serif; font-size:20px; font-weight:600; margin-bottom:6px; line-height:1.2; }
+  .career-family { font-size:12px; color:var(--muted); margin-bottom:16px; }
+  .career-card.selected .career-family { color:rgba(255,255,255,.5); }
+  .career-desc { font-size:13px; line-height:1.6; color:var(--muted); margin-bottom:16px; }
+  .career-card.selected .career-desc { color:rgba(255,255,255,.7); }
+  .career-meta { display:flex; flex-direction:column; gap:6px; }
+  .meta-item { display:flex; justify-content:space-between; font-size:12px; }
+  .meta-key { color:var(--muted); }
+  .career-card.selected .meta-key { color:rgba(255,255,255,.4); }
+  .meta-val { font-weight:600; }
+  .selected-badge { position:absolute; top:14px;right:14px; background:var(--accent); color:white; font-size:10px; font-weight:700; letter-spacing:1px; padding:3px 8px; display:none; }
+  .career-card.selected .selected-badge { display:block; }
+  .view-details-btn { margin-top:16px; width:100%; background:transparent; border:1.5px solid currentColor; padding:8px; font-family:'DM Sans',sans-serif; font-size:12px; font-weight:600; cursor:pointer; transition:all .15s; color:inherit; }
+  .view-details-btn:hover { background:var(--accent); border-color:var(--accent); color:white; }
+
+  /* Expanded Detail Panel */
+  #detailPanel { display:none; }
+  .detail-zone-a { background:var(--ink); color:var(--paper); padding:32px 48px; position:sticky; top:56px; z-index:50; }
+  .detail-zone-b { padding:40px 48px; max-width:900px; margin:0 auto; }
+  .detail-score-row { display:flex; gap:40px; align-items:flex-start; }
+  .detail-score-big { font-family:'DM Mono',monospace; font-size:64px; font-weight:500; color:var(--accent); line-height:1; }
+  .detail-role-name { font-family:'Playfair Display',serif; font-size:32px; margin-bottom:4px; }
+  .detail-justification { font-size:15px; opacity:.8; max-width:600px; line-height:1.6; margin-top:12px; }
+  .detail-chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
+  .detail-chip { padding:4px 12px; font-size:11px; font-weight:600; letter-spacing:.5px; }
+  .chip-matched { background:rgba(42,140,90,.2); color:#4ecb8a; border:1px solid rgba(42,140,90,.3); }
+  .chip-gap { background:rgba(200,80,42,.2); color:#ff8a6a; border:1px solid rgba(200,80,42,.3); }
+  .comp-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:20px; }
+  .comp-card { text-align:center; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1); padding:16px 12px; }
+  .comp-score { font-family:'DM Mono',monospace; font-size:24px; font-weight:500; color:var(--accent); }
+  .comp-label { font-size:10px; opacity:.5; text-transform:uppercase; letter-spacing:1px; margin-top:4px; }
+
+  /* ---- RESULTS ---- */
+  .results-hero { background:var(--ink); color:var(--paper); padding:64px; text-align:center; margin-bottom:48px; }
+  .results-hero h2 { font-family:'Playfair Display',serif; font-size:48px; margin-bottom:12px; letter-spacing:-1px; }
+  .results-hero p { font-size:16px; opacity:.6; }
+
+  /* ---- ACTION BAR ---- */
+  .action-bar { display:flex; justify-content:space-between; align-items:center; padding:24px 48px; border-top:1px solid var(--border); background:var(--paper); position:sticky; bottom:0; margin-top:48px; }
+  .action-hint { font-size:13px; color:var(--muted); }
+  .action-hint.ok { color:var(--success); font-weight:600; }
+
+  /* ---- TABS ---- */
+  .tabs { display:flex; border-bottom:2px solid var(--border); margin-bottom:32px; }
+  .tab { padding:12px 24px; font-size:13px; font-weight:600; cursor:pointer; color:var(--muted); border-bottom:2px solid transparent; margin-bottom:-2px; transition:all .2s; }
+  .tab.active { color:var(--ink); border-bottom-color:var(--ink); }
+  .tab:hover { color:var(--ink); }
+
+  /* ---- ERROR TOAST ---- */
+  #toast { position:fixed; bottom:24px; right:24px; background:var(--accent); color:white; padding:14px 20px; font-size:13px; font-weight:500; max-width:360px; z-index:9999; display:none; box-shadow:4px 4px 0 rgba(0,0,0,.2); }
+  #toast.show { display:block; animation:fadeIn .3s ease; }
+
+  /* ---- SPINNER ---- */
+  .spinner { display:inline-block; width:16px; height:16px; border:2px solid rgba(255,255,255,.3); border-top-color:white; border-radius:50%; animation:spin .7s linear infinite; vertical-align:middle; margin-right:8px; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+
+  .divider { height:1px; background:var(--border); margin:32px 0; }
+
+  /* Opt-in section */
+  .optin-section { background:var(--cream); border:1.5px solid var(--border); padding:32px; margin-top:32px; text-align:center; }
+  .optin-input { background:var(--paper); border:1.5px solid var(--border); padding:12px 16px; font-family:'DM Sans',sans-serif; font-size:14px; width:280px; outline:none; margin-right:12px; }
+  .optin-input:focus { border-color:var(--ink); }
+</style>
+</head>
+<body>
+
+<!-- Loading Overlay -->
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loader-logo">Career<span>Ink</span></div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <div class="loader-text" id="loaderText">Analyzing your profile...</div>
+</div>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<!-- ====== LANDING ====== -->
+<div id="landing">
+  <nav>
+    <div class="logo">Career<span>Ink</span></div>
+    <div class="nav-links">
+      <a href="#">How It Works</a>
+      <a href="#">Success Stories</a>
+      <a href="#">For Teams</a>
+    </div>
+    <button class="btn-primary" onclick="startApp()">Begin Assessment →</button>
+  </nav>
+  <div class="hero">
+    <div class="hero-left">
+      <div class="tag"><span class="tag-dot"></span> AI-Powered Career Intelligence</div>
+      <h1>Navigate your<br><span class="line-accent">career pivot</span><br>with clarity</h1>
+      <p class="hero-sub">From CV to personalized career roadmap in 30–45 minutes. Backed by O*NET, Big Five, and Holland Code frameworks.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="startApp()">Start Free Assessment →</button>
+        <button class="btn-secondary">Watch Demo</button>
+      </div>
+      <p style="font-size:12px;color:var(--muted);margin-top:16px">73% of IT professionals consider changing roles within 2 years. Only 23% successfully transition.</p>
+    </div>
+    <div class="hero-right">
+      <div class="hero-card">
+        <div style="position:absolute;top:-12px;left:24px;background:var(--accent);color:white;font-size:10px;font-weight:700;letter-spacing:1.5px;padding:4px 12px">EXAMPLE</div>
+        <div class="match-score">87%</div>
+        <div class="match-label">Career Match Score</div>
+        <div class="match-role">Product Manager</div>
+        <div class="match-from">Transitioning from: Senior Developer</div>
+        <div class="match-bar-wrap">
+          <div class="match-bar-label"><span>Hard Skills</span><span>92%</span></div>
+          <div class="match-bar"><div class="match-bar-fill" style="--w:92%"></div></div>
+        </div>
+        <div class="match-bar-wrap">
+          <div class="match-bar-label"><span>Personality Match</span><span>84%</span></div>
+          <div class="match-bar"><div class="match-bar-fill" style="--w:84%;animation-delay:.2s"></div></div>
+        </div>
+        <div class="match-bar-wrap">
+          <div class="match-bar-label"><span>Work Style Fit</span><span>78%</span></div>
+          <div class="match-bar"><div class="match-bar-fill" style="--w:78%;animation-delay:.4s"></div></div>
+        </div>
+        <div class="match-skills">
+          <span class="skill-chip">Agile</span><span class="skill-chip">Python</span><span class="skill-chip">SQL</span>
+          <span class="skill-chip new">Roadmapping ✦</span><span class="skill-chip new">Stakeholder Mgmt ✦</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="steps-bar">
+    <div class="step-item"><div class="step-num">01 — ASSESS</div><div class="step-title">Profile & Assessment</div><div class="step-desc">CV analysis + 48-question psychological framework</div></div>
+    <div class="step-item"><div class="step-num">02 — DISCOVER</div><div class="step-title">Career Path Discovery</div><div class="step-desc">3–5 personalized IT career path recommendations</div></div>
+    <div class="step-item"><div class="step-num">03 — REPORT</div><div class="step-title">Download Your Plan</div><div class="step-desc">Downloadable PDF Career Recommendations Report</div></div>
+  </div>
+</div>
+
+<!-- ====== APP ====== -->
+<div id="app">
+  <div class="app-header">
+    <div class="logo" style="font-size:20px">Career<span style="color:var(--accent)">Ink</span></div>
+    <div class="progress-steps">
+      <div class="prog-step active" id="pstep1"><div class="step-circle">1</div>Assessment</div>
+      <div class="prog-divider"></div>
+      <div class="prog-step" id="pstep2"><div class="step-circle">2</div>Career Discovery</div>
+      <div class="prog-divider"></div>
+      <div class="prog-step" id="pstep3"><div class="step-circle">✓</div>Your Plan</div>
+    </div>
+    <button class="btn-secondary btn-sm" onclick="showLanding()">← Back</button>
+  </div>
+
+  <!-- AGENT 1 -->
+  <div id="agent1" class="app-body">
+    <div class="section-header">
+      <div class="section-label">Agent 01 — Profile Builder</div>
+      <div class="section-title">Tell us about yourself</div>
+      <div class="section-sub">Paste your CV and complete our research-backed 48-question assessment.</div>
+    </div>
+    <div class="tabs">
+      <div class="tab active" id="tab-cv" onclick="switchTab('cv')">📄 CV Analysis</div>
+      <div class="tab" id="tab-skills" onclick="switchTab('skills')">⚡ Skills Review</div>
+      <div class="tab" id="tab-psych" onclick="switchTab('psych')">🧠 Psychological Assessment</div>
+      <div class="tab" id="tab-profile" onclick="switchTab('profile')">👤 Your Profile</div>
+    </div>
+
+    <!-- CV Tab -->
+    <div id="cvTab">
+      <div class="two-col">
+        <div class="panel">
+          <div class="panel-title">📋 Paste Your CV</div>
+          <div class="panel-sub">Minimum 500 characters. We extract skills, experience, and education automatically.</div>
+          <div class="cv-input-wrap">
+            <textarea class="cv-input" id="cvInput" placeholder="Paste your CV here...&#10;&#10;Example:&#10;Jane Smith | Senior Software Engineer&#10;8 years Python, React, Node.js, AWS&#10;Led team of 6 developers, CI/CD pipelines&#10;Agile/Scrum methodology..."></textarea>
+          </div>
+          <div class="char-counter" id="charCounter"><span id="charCount">0 / 500 characters</span><span id="charStatus">Minimum 500 required</span></div>
+          <button class="btn-primary" style="margin-top:16px;width:100%" id="analyzeBtn" onclick="analyzeCV()" disabled>Analyze My CV →</button>
+        </div>
+        <div class="panel">
+          <div class="panel-title">💡 Tips for Best Results</div>
+          <div class="panel-sub">Include these sections for accurate skill extraction:</div>
+          <ul style="font-size:13px;color:var(--muted);line-height:2;list-style:none">
+            <li>✓ Current role title and years of experience</li>
+            <li>✓ Technical skills list (Python, AWS, etc.)</li>
+            <li>✓ Past job titles and responsibilities</li>
+            <li>✓ Education and certifications</li>
+            <li>✓ Projects with technologies used</li>
+          </ul>
+          <div style="margin-top:20px;padding:16px;background:var(--cream);border:1px solid var(--border)">
+            <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:8px">Privacy Note</div>
+            <div style="font-size:12px;color:var(--muted);line-height:1.6">Your CV data is processed locally and not stored permanently. Only extracted skill tags are retained for assessment.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Review Tab -->
+    <div id="skillsTab" style="display:none">
+      <div class="two-col">
+        <div class="panel">
+          <div class="panel-title">⚡ Technical Skills</div>
+          <div class="panel-sub">Remove irrelevant skills (✕) or add missing ones — type + Enter.</div>
+          <div class="skills-area">
+            <div class="skills-chips-row" id="techChips"></div>
+            <input class="chip-input" id="techSkillInput" placeholder="Add a skill, press Enter..." onkeydown="addSkillOnEnter(event,'tech')">
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-title">🤝 Soft Skills</div>
+          <div class="panel-sub">These carry forward to your PDF report.</div>
+          <div class="skills-area">
+            <div class="skills-chips-row" id="softChips"></div>
+            <input class="chip-input" id="softSkillInput" placeholder="Add a skill, press Enter..." onkeydown="addSkillOnEnter(event,'soft')">
+          </div>
+          <div style="margin-top:16px;font-size:13px;color:var(--muted)">
+            Experience: <b id="expDisplay">–</b> years &nbsp;|&nbsp; Role: <b id="roleDisplay">–</b>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:24px;text-align:right">
+        <button class="btn-primary" onclick="confirmSkillsAndContinue()">Confirm Skills & Start Assessment →</button>
+      </div>
+    </div>
+
+    <!-- Psych Tab -->
+    <div id="psychTab" style="display:none">
+      <div class="two-col">
+        <div class="panel" style="grid-column:1/-1;max-width:680px">
+          <div class="q-framework" id="qFramework">Big Five Personality</div>
+          <div class="q-progress-bar"><div class="q-progress-fill" id="qProgress" style="width:2%"></div></div>
+          <div class="q-counter" id="qCounter">Question 1 of 48</div>
+          <div class="question-text" id="qText">Loading...</div>
+          <div class="likert-labels">
+            <span>Strongly Disagree</span>
+            <span>Strongly Agree</span>
+          </div>
+          <div class="likert-row" id="likertRow"></div>
+          <div class="q-nav">
+            <button class="btn-secondary btn-sm" id="qBackBtn" onclick="prevQuestion()" style="visibility:hidden">← Back</button>
+            <span id="qSaveStatus" style="font-size:11px;color:var(--muted)"></span>
+            <button class="btn-primary btn-sm" id="qNextBtn" onclick="nextQuestion()" disabled>Next →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile Tab -->
+    <div id="profileTab" style="display:none">
+      <div class="profile-card">
+        <div style="font-size:11px;letter-spacing:2px;opacity:.5;text-transform:uppercase;margin-bottom:8px">YOUR PROFILE</div>
+        <div style="font-family:'Playfair Display',serif;font-size:28px;margin-bottom:4px" id="profileName">–</div>
+        <div style="font-size:14px;opacity:.6" id="profileExp">– years experience · – education</div>
+        <div class="profile-badges" id="profileBadges"></div>
+        <div class="trait-bars" id="profileTraitBars"></div>
+      </div>
+      <div style="text-align:center;padding:16px;background:var(--cream);border:1.5px solid var(--border)">
+        <div style="color:var(--success);font-weight:700;font-size:16px">✓ Profile complete — ready for Career Discovery</div>
+        <div style="font-size:13px;color:var(--muted);margin-top:4px">Click "Continue to Career Discovery" below</div>
+      </div>
+    </div>
+
+    <div class="action-bar">
+      <div class="action-hint" id="agent1Hint">Complete CV analysis and 48-question assessment to continue</div>
+      <button class="btn-primary" id="agent1Next" onclick="goToAgent2()" disabled>Continue to Career Discovery →</button>
+    </div>
+  </div>
+
+  <!-- AGENT 2 -->
+  <div id="agent2" class="app-body" style="display:none">
+    <div id="cardsView">
+      <div class="section-header">
+        <div class="section-label">Agent 02 — Career Discovery</div>
+        <div class="section-title">Your career matches</div>
+        <div class="section-sub">Based on your profile, here are your best IT career transition paths.</div>
+      </div>
+      <div class="career-grid" id="careerGrid"></div>
+      <div class="action-bar">
+        <div class="action-hint" id="agent2Hint">Select a career path to proceed</div>
+        <button class="btn-primary" id="agent2Next" onclick="goToResults()" disabled>Generate My Report →</button>
+      </div>
+    </div>
+
+    <!-- Expanded Detail Panel -->
+    <div id="detailPanel">
+      <div class="detail-zone-a">
+        <button onclick="closeDetail()" style="background:transparent;border:1.5px solid rgba(255,255,255,.3);color:var(--paper);padding:8px 16px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;margin-bottom:20px">← Back to All Matches</button>
+        <div class="detail-score-row">
+          <div>
+            <div class="detail-score-big" id="detailScore">–%</div>
+            <div style="font-size:11px;opacity:.4;text-transform:uppercase;letter-spacing:1px">Match Score</div>
+          </div>
+          <div style="flex:1;padding-left:32px">
+            <div class="detail-role-name" id="detailRole">–</div>
+            <div style="font-size:13px;opacity:.6" id="detailFamily">–</div>
+            <div class="detail-justification" id="detailJustification">–</div>
+            <div class="detail-chips" id="detailChips"></div>
+          </div>
+          <div>
+            <button class="btn-primary" onclick="selectThisPath()" style="background:var(--accent)">Select This Path →</button>
+          </div>
+        </div>
+        <div class="comp-grid" id="detailCompGrid"></div>
+      </div>
+      <div class="detail-zone-b" id="detailZoneB"></div>
+    </div>
+  </div>
+
+  <!-- RESULTS -->
+  <div id="results" class="app-body" style="display:none">
+    <div class="results-hero">
+      <div style="font-size:11px;letter-spacing:2px;opacity:.5;text-transform:uppercase;margin-bottom:12px">Your Plan Is Ready</div>
+      <h2>Your career path to<br><span id="resultRole" style="color:#ff8a6a;font-style:italic">–</span></h2>
+      <p id="resultSub">–</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:32px" id="resultStats"></div>
+    <div style="display:flex;gap:16px;justify-content:center;padding-bottom:32px">
+      <button class="btn-primary" style="padding:16px 40px;font-size:16px" id="downloadPdfBtn" onclick="downloadPDF()">⬇ Download Career Report (PDF)</button>
+      <button class="btn-secondary" style="padding:16px 40px;font-size:16px" onclick="showLanding()">Start New Assessment</button>
+    </div>
+    <div class="optin-section">
+      <div style="font-family:'Playfair Display',serif;font-size:22px;margin-bottom:8px">Skills Gap Analysis — Coming Soon</div>
+      <div style="font-size:14px;color:var(--muted);margin-bottom:20px">Get notified when we launch personalized learning roadmaps for your target role.</div>
+      <input class="optin-input" id="optinEmail" type="email" placeholder="your@email.com">
+      <button class="btn-primary" onclick="submitOptin()">Notify Me →</button>
+      <div id="optinMsg" style="margin-top:12px;font-size:13px;color:var(--success);display:none"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== CONFIG =====
+const API = '';  // Same origin
+
+// ===== STATE =====
+let cvText = '';
+let techSkills = [];
+let softSkills = [];
+let expYears = 0;
+let currentRole = '';
+let educationLevel = '';
+let questions = [];
+let currentQ = 0;
+let answers = {};   // questionId → value
+let userProfile = null;
+let careerMatches = [];
+let selectedCareer = null;
+let currentDetailCareer = null;
+let profileComplete = false;
+
+// ===== UTILS =====
+function showToast(msg, dur=4000) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), dur);
+}
+
+function loading(text, show=true) {
+  const ol = document.getElementById('loadingOverlay');
+  document.getElementById('loaderText').textContent = text;
+  ol.classList.toggle('show', show);
+}
+
+function updateStep(n) {
+  ['pstep1','pstep2','pstep3'].forEach((id,i) => {
+    const el = document.getElementById(id);
+    el.className = 'prog-step';
+    if (i+1 < n) el.classList.add('done');
+    if (i+1 === n) el.classList.add('active');
+  });
+}
+
+function showLanding() {
+  document.getElementById('landing').style.display = 'flex';
+  document.getElementById('app').style.display = 'none';
+}
+
+function startApp() {
+  document.getElementById('landing').style.display = 'none';
+  document.getElementById('app').style.display = 'flex';
+  updateStep(1);
+}
+
+// ===== TABS =====
+function switchTab(tab) {
+  ['cv','skills','psych','profile'].forEach(t => {
+    document.getElementById(t+'Tab').style.display = t===tab ? 'block' : 'none';
+    const el = document.getElementById('tab-'+t);
+    if (el) el.className = 'tab' + (t===tab ? ' active' : '');
+  });
+}
+
+// ===== CV ANALYSIS =====
+document.addEventListener('DOMContentLoaded', () => {
+  const ta = document.getElementById('cvInput');
+  if (ta) ta.addEventListener('input', updateCharCount);
+});
+
+function updateCharCount() {
+  const val = document.getElementById('cvInput').value;
+  const len = val.length;
+  const counter = document.getElementById('charCounter');
+  const countSpan = document.getElementById('charCount');
+  const statusSpan = document.getElementById('charStatus');
+  const btn = document.getElementById('analyzeBtn');
+  countSpan.textContent = `${len} / 500 characters`;
+  if (len >= 500) {
+    counter.className = 'char-counter ready';
+    statusSpan.textContent = '✓ Ready to analyze';
+    btn.disabled = false;
+  } else {
+    counter.className = 'char-counter';
+    statusSpan.textContent = `${500-len} more characters needed`;
+    btn.disabled = true;
+  }
+}
+
+async function analyzeCV() {
+  cvText = document.getElementById('cvInput').value;
+  const btn = document.getElementById('analyzeBtn');
+  btn.innerHTML = '<span class="spinner"></span>Analyzing...';
+  btn.disabled = true;
+  try {
+    const res = await fetch(API+'/api/cv/analyze', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({cv_text: cvText})
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || 'Analysis failed');
+    const data = await res.json();
+    techSkills = [...data.technical_skills];
+    softSkills = [...data.soft_skills];
+    expYears = data.experience_years;
+    currentRole = data.current_role;
+    educationLevel = data.education_level;
+    renderSkillChips();
+    document.getElementById('expDisplay').textContent = expYears;
+    document.getElementById('roleDisplay').textContent = currentRole;
+    switchTab('skills');
+  } catch(e) {
+    showToast('CV analysis failed: ' + e.message);
+  } finally {
+    btn.innerHTML = 'Analyze My CV →';
+    btn.disabled = false;
+  }
+}
+
+// ===== SKILLS CHIPS =====
+function renderSkillChips() {
+  renderChips('techChips', techSkills, 'tech');
+  renderChips('softChips', softSkills, 'soft');
+}
+
+function renderChips(containerId, skillsArr, type) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = '';
+  skillsArr.forEach((s, i) => {
+    const chip = document.createElement('span');
+    chip.className = 'chip' + (type === 'soft' ? ' soft' : '');
+    chip.innerHTML = `${s} <span class="chip-x" onclick="removeSkill('${type}',${i})">✕</span>`;
+    container.appendChild(chip);
+  });
+}
+
+function removeSkill(type, idx) {
+  if (type === 'tech') { techSkills.splice(idx, 1); renderChips('techChips', techSkills, 'tech'); }
+  else { softSkills.splice(idx, 1); renderChips('softChips', softSkills, 'soft'); }
+}
+
+function addSkillOnEnter(e, type) {
+  if (e.key !== 'Enter' && e.key !== ',') return;
+  e.preventDefault();
+  const inputId = type === 'tech' ? 'techSkillInput' : 'softSkillInput';
+  const val = document.getElementById(inputId).value.trim().replace(/,$/, '');
+  if (!val) return;
+  const arr = type === 'tech' ? techSkills : softSkills;
+  if (arr.map(s=>s.toLowerCase()).includes(val.toLowerCase())) {
+    showToast('Skill already added');
+    return;
+  }
+  arr.push(val);
+  renderChips(type === 'tech' ? 'techChips' : 'softChips', arr, type);
+  document.getElementById(inputId).value = '';
+}
+
+function confirmSkillsAndContinue() {
+  if (techSkills.length === 0) { showToast('Please add at least one technical skill.'); return; }
+  loadAssessmentQuestions();
+}
+
+// ===== ASSESSMENT =====
+async function loadAssessmentQuestions() {
+  loading('Loading assessment questions...', true);
+  try {
+    const res = await fetch(API+'/api/assessment/questions');
+    const data = await res.json();
+    questions = data.questions;
+    currentQ = 0;
+    answers = {};
+    loading('', false);
+    switchTab('psych');
+    renderQuestion();
+  } catch(e) {
+    loading('', false);
+    showToast('Failed to load questions: ' + e.message);
+  }
+}
+
+function renderQuestion() {
+  if (!questions.length) return;
+  const q = questions[currentQ];
+  document.getElementById('qFramework').textContent = q.framework;
+  document.getElementById('qText').textContent = q.text;
+  document.getElementById('qCounter').textContent = `Question ${currentQ+1} of ${questions.length}`;
+  document.getElementById('qProgress').style.width = `${((currentQ+1)/questions.length)*100}%`;
+
+  // Back button visibility
+  document.getElementById('qBackBtn').style.visibility = currentQ > 0 ? 'visible' : 'hidden';
+
+  // Likert scale
+  const row = document.getElementById('likertRow');
+  row.innerHTML = '';
+  const labels = ['1','2','3','4','5'];
+  labels.forEach(val => {
+    const btn = document.createElement('button');
+    btn.className = 'likert-btn' + (answers[q.id] == val ? ' selected' : '');
+    btn.textContent = val;
+    btn.onclick = () => selectLikert(val);
+    row.appendChild(btn);
+  });
+
+  document.getElementById('qNextBtn').disabled = !answers[q.id];
+
+  // Auto-save indicator every 5 questions
+  const saveStatus = document.getElementById('qSaveStatus');
+  if ((currentQ+1) % 5 === 0) {
+    saveStatus.textContent = '✓ Progress saved';
+    setTimeout(() => { saveStatus.textContent = ''; }, 2000);
+  } else { saveStatus.textContent = ''; }
+}
+
+function selectLikert(val) {
+  const q = questions[currentQ];
+  answers[q.id] = parseInt(val);
+  // Update button visuals
+  document.querySelectorAll('.likert-btn').forEach((b,i) => {
+    b.className = 'likert-btn' + ((i+1) == val ? ' selected' : '');
+  });
+  document.getElementById('qNextBtn').disabled = false;
+}
+
+function nextQuestion() {
+  if (currentQ < questions.length - 1) {
+    currentQ++;
+    renderQuestion();
+  } else {
+    submitAssessment();
+  }
+}
+
+function prevQuestion() {
+  if (currentQ > 0) { currentQ--; renderQuestion(); }
+}
+
+async function submitAssessment() {
+  loading('Scoring your assessment...', true);
+  const answersArr = Object.entries(answers).map(([qid, val]) => ({
+    question_id: parseInt(qid),
+    answer: val
+  }));
+
+  try {
+    const payload = {
+      cv_text: cvText,
+      confirmed_hard_skills: techSkills,
+      confirmed_soft_skills: softSkills,
+      experience_years: expYears,
+      current_role: currentRole,
+      education_level: educationLevel,
+      answers: answersArr
+    };
+    const res = await fetch(API+'/api/assessment/submit', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(payload)
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || 'Submission failed');
+    userProfile = await res.json();
+    loading('', false);
+    renderProfileSummary();
+    profileComplete = true;
+    document.getElementById('agent1Next').disabled = false;
+    document.getElementById('agent1Hint').textContent = '✓ Profile complete — ready for Career Discovery';
+    document.getElementById('agent1Hint').className = 'action-hint ok';
+    switchTab('profile');
+  } catch(e) {
+    loading('', false);
+    showToast('Assessment submission failed: ' + e.message);
+  }
+}
+
+function renderProfileSummary() {
+  if (!userProfile) return;
+  document.getElementById('profileName').textContent = userProfile.current_role || 'IT Professional';
+  document.getElementById('profileExp').textContent = `${userProfile.experience_years} years experience · ${userProfile.education_level}`;
+
+  // Badges
+  const badges = document.getElementById('profileBadges');
+  badges.innerHTML = '';
+  const bf = userProfile.personality_traits;
+  const wv = userProfile.work_values;
+  const top3holland = Object.entries(userProfile.work_style)
+    .filter(([,v]) => v === 'High').map(([k]) => k.charAt(0).toUpperCase() + k.slice(1));
+  [...userProfile.hard_skills.slice(0,6),
+   `OCEAN: Openness ${bf.openness}`,
+   `Holland: ${top3holland.slice(0,2).join(' · ')}`,
+   `Collab: ${wv.collaboration}`
+  ].forEach(b => {
+    const el = document.createElement('span');
+    el.className = 'badge';
+    el.textContent = b;
+    badges.appendChild(el);
+  });
+
+  // Trait bars (raw scores 4-20)
+  const bars = document.getElementById('profileTraitBars');
+  bars.innerHTML = '';
+  const rawBF = userProfile.bigfive_raw;
+  ['openness','conscientiousness','extraversion','agreeableness','neuroticism'].forEach(trait => {
+    const raw = rawBF[trait] || 12;
+    const pct = ((raw - 4) / 16) * 100;
+    bars.innerHTML += `
+      <div class="trait-bar-item">
+        <div class="trait-bar-label"><span>${trait.charAt(0).toUpperCase()+trait.slice(1)}</span><span>${userProfile.personality_traits[trait]}</span></div>
+        <div class="trait-bar-bg"><div class="trait-bar-fill" style="width:${pct}%"></div></div>
+      </div>`;
+  });
+}
+
+// ===== AGENT 2: Career Matching =====
+async function goToAgent2() {
+  loading('Matching your profile to career paths...', true);
+  try {
+    const res = await fetch(API+'/api/careers/match', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(userProfile)
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || 'Matching failed');
+    const data = await res.json();
+    careerMatches = data.career_matches;
+    loading('', false);
+    document.getElementById('agent1').style.display = 'none';
+    document.getElementById('agent2').style.display = 'block';
+    document.getElementById('results').style.display = 'none';
+    document.getElementById('cardsView').style.display = 'block';
+    document.getElementById('detailPanel').style.display = 'none';
+    updateStep(2);
+    renderCareerCards();
+  } catch(e) {
+    loading('', false);
+    showToast('Career matching failed: ' + e.message);
+  }
+}
+
+function renderCareerCards() {
+  const grid = document.getElementById('careerGrid');
+  grid.innerHTML = '';
+  careerMatches.forEach(cm => {
+    const card = document.createElement('div');
+    card.className = 'career-card';
+    const skillsHtml = cm.top_matched_skills.map(s => `<span class="skill-chip">${s}</span>`).join('');
+    const gapHtml = cm.top_gap_skills.map(s => `<span class="skill-chip new">${s} ✦</span>`).join('');
+    card.innerHTML = `
+      <div class="selected-badge">SELECTED</div>
+      <div class="career-score">${cm.final_score.toFixed(0)}%</div>
+      <div class="career-match-label">Match Score</div>
+      <div class="career-name">${cm.role_name}</div>
+      <div class="career-family">${cm.role_family}</div>
+      <div class="career-desc">${cm.description_summary.slice(0,120)}...</div>
+      <div class="career-meta">
+        <div class="meta-item"><span class="meta-key">Salary</span><span class="meta-val">${cm.salary_range}</span></div>
+        <div class="meta-item"><span class="meta-key">Ramp-Up</span><span class="meta-val">${cm.avg_ramp_up_months} months</span></div>
+        <div class="meta-item"><span class="meta-key">Growth</span><span class="meta-val">${cm.growth_trajectory}</span></div>
+      </div>
+      <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:6px">${skillsHtml}${gapHtml}</div>
+      <button class="view-details-btn" onclick="event.stopPropagation();openDetail('${cm.career_id}')">View Full Details →</button>
+    `;
+    card.onclick = () => selectCareer(cm, card);
+    grid.appendChild(card);
+  });
+}
+
+function selectCareer(cm, el) {
+  document.querySelectorAll('.career-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  selectedCareer = cm;
+  document.getElementById('agent2Next').disabled = false;
+  document.getElementById('agent2Hint').textContent = `✓ Selected: ${cm.role_name} — ${cm.final_score.toFixed(0)}% match`;
+  document.getElementById('agent2Hint').className = 'action-hint ok';
+}
+
+function openDetail(careerId) {
+  const cm = careerMatches.find(c => c.career_id === careerId);
+  if (!cm) return;
+  currentDetailCareer = cm;
+  document.getElementById('cardsView').style.display = 'none';
+  document.getElementById('detailPanel').style.display = 'block';
+
+  document.getElementById('detailScore').textContent = cm.final_score.toFixed(0) + '%';
+  document.getElementById('detailRole').textContent = cm.role_name;
+  document.getElementById('detailFamily').textContent = `${cm.role_family} · Ramp-up: ~${cm.avg_ramp_up_months} months`;
+  document.getElementById('detailJustification').textContent = cm.justification;
+
+  // Chips
+  const chips = document.getElementById('detailChips');
+  chips.innerHTML = cm.top_matched_skills.map(s => `<span class="detail-chip chip-matched">✓ ${s}</span>`).join('') +
+                    cm.top_gap_skills.map(s => `<span class="detail-chip chip-gap">→ ${s}</span>`).join('');
+
+  // Component scores
+  const compGrid = document.getElementById('detailCompGrid');
+  compGrid.innerHTML = [
+    {label:'Hard Skills', score: cm.skills_score, weight:'40%'},
+    {label:'Personality', score: cm.traits_score, weight:'25%'},
+    {label:'Work Style', score: cm.style_score, weight:'20%'},
+    {label:'Experience', score: cm.experience_score, weight:'15%'},
+  ].map(c => `
+    <div class="comp-card">
+      <div class="comp-score">${c.score.toFixed(0)}%</div>
+      <div class="comp-label">${c.label}</div>
+      <div style="font-size:9px;opacity:.3;margin-top:2px">${c.weight} weight</div>
+    </div>`).join('');
+
+  // Zone B content
+  const zoneB = document.getElementById('detailZoneB');
+  zoneB.innerHTML = `
+    <h2 style="font-family:'Playfair Display',serif;font-size:28px;margin-bottom:20px">${cm.role_name}</h2>
+    <p style="font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:24px">${cm.description_summary}</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px">
+      <div class="panel">
+        <div class="panel-title" style="font-size:14px">✓ Your Top Matched Skills</div>
+        ${cm.top_matched_skills.map(s=>`<div style="padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--success)">● ${s}</div>`).join('')}
+      </div>
+      <div class="panel">
+        <div class="panel-title" style="font-size:14px">→ Skills to Develop</div>
+        ${cm.top_gap_skills.map(s=>`<div style="padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--accent)">● ${s}</div>`).join('')}
+      </div>
+    </div>
+    <div style="background:var(--cream);border:1.5px solid var(--border);padding:24px">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Transition Facts</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+        <div><div style="font-family:'DM Mono',monospace;font-size:28px;font-weight:500;color:var(--ink)">${cm.avg_ramp_up_months}</div><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Months Ramp-Up</div></div>
+        <div><div style="font-family:'DM Mono',monospace;font-size:28px;font-weight:500;color:var(--ink)">${cm.final_score.toFixed(0)}%</div><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Match Score</div></div>
+        <div><div style="font-family:'DM Mono',monospace;font-size:16px;font-weight:500;color:var(--ink)">${cm.salary_range}</div><div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Salary Range</div></div>
+      </div>
+    </div>
+    <div style="margin-top:24px;text-align:right">
+      <button class="btn-primary" onclick="selectThisPath()" style="background:var(--accent);padding:14px 32px">Select This Path & Generate Report →</button>
+    </div>`;
+}
+
+function closeDetail() {
+  document.getElementById('cardsView').style.display = 'block';
+  document.getElementById('detailPanel').style.display = 'none';
+}
+
+function selectThisPath() {
+  if (currentDetailCareer) {
+    const cards = document.querySelectorAll('.career-card');
+    const idx = careerMatches.findIndex(c => c.career_id === currentDetailCareer.career_id);
+    if (idx >= 0 && cards[idx]) selectCareer(currentDetailCareer, cards[idx]);
+  }
+  closeDetail();
+  goToResults();
+}
+
+// ===== RESULTS =====
+async function goToResults() {
+  if (!selectedCareer) { showToast('Please select a career path first.'); return; }
+  loading('Generating your career report...', true);
+  setTimeout(() => {
+    loading('', false);
+    document.getElementById('agent1').style.display = 'none';
+    document.getElementById('agent2').style.display = 'none';
+    document.getElementById('results').style.display = 'block';
+    updateStep(3);
+    renderResults();
+  }, 1500);
+}
+
+function renderResults() {
+  document.getElementById('resultRole').textContent = selectedCareer.role_name;
+  document.getElementById('resultSub').textContent =
+    `Match score: ${selectedCareer.final_score.toFixed(0)}% · Ramp-up: ~${selectedCareer.avg_ramp_up_months} months · ${selectedCareer.salary_range}`;
+
+  const stats = document.getElementById('resultStats');
+  stats.innerHTML = [
+    {n: selectedCareer.top_matched_skills.length, label:'Matched Skills', sub:'Already in your profile', color:'var(--success)'},
+    {n: selectedCareer.top_gap_skills.length,    label:'Skills to Develop', sub:'Critical gaps to address', color:'var(--accent)'},
+    {n: selectedCareer.avg_ramp_up_months,        label:'Months to Transition', sub:'Estimated ramp-up time', color:'var(--accent2)'},
+  ].map(s => `
+    <div class="panel" style="text-align:center">
+      <div style="font-family:'DM Mono',monospace;font-size:48px;font-weight:500;color:${s.color};margin-bottom:8px">${s.n}</div>
+      <div style="font-weight:700;margin-bottom:4px">${s.label}</div>
+      <div style="font-size:13px;color:var(--muted)">${s.sub}</div>
+    </div>`).join('');
+}
+
+async function downloadPDF() {
+  const btn = document.getElementById('downloadPdfBtn');
+  btn.innerHTML = '<span class="spinner"></span>Generating PDF...';
+  btn.disabled = true;
+  try {
+    const payload = {
+      user_profile: userProfile,
+      career_matches: careerMatches,
+      user_name: userProfile.current_role || 'Candidate',
+      assessment_date: new Date().toLocaleDateString('en-US', {year:'numeric',month:'long',day:'numeric'})
+    };
+    const res = await fetch(API+'/api/report/download', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(payload)
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || 'PDF generation failed');
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `CareerInk_Career_Report_${new Date().toISOString().slice(0,10)}.pdf`;
+    a.click();
+    URL.revokeObjectURL(url);
+  } catch(e) {
+    showToast('PDF download failed: ' + e.message);
+  } finally {
+    btn.innerHTML = '⬇ Download Career Report (PDF)';
+    btn.disabled = false;
+  }
+}
+
+async function submitOptin() {
+  const email = document.getElementById('optinEmail').value;
+  if (!email || !email.includes('@')) { showToast('Please enter a valid email.'); return; }
+  try {
+    const res = await fetch(API+'/api/optin', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({email, user_name: userProfile?.current_role || ''})
+    });
+    const data = await res.json();
+    document.getElementById('optinMsg').textContent = data.message;
+    document.getElementById('optinMsg').style.display = 'block';
+    document.getElementById('optinEmail').value = '';
+  } catch(e) {
+    showToast('Failed to save opt-in.');
+  }
+}
+
+// ===== INIT =====
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('cvInput')?.addEventListener('input', updateCharCount);
+});
+</script>
+</body>
+</html>
