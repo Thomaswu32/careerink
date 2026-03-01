@@ -1,0 +1,32 @@
+# Git
+.git/
+.gitignore
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+
+# Docs / screenshots
+docs/
+
+# Downloads
+downloads/
+
+# IDE
+.vscode/
+.idea/
