@@ -2,11 +2,21 @@
 
 > From CV to personalized career roadmap in 30–45 minutes.
 
+## 🚀 Live Demo
+
+**👉 [https://q7fdu7oc.run.complete.dev](https://q7fdu7oc.run.complete.dev)**
+
+---
+
+## Screenshot
+
+![CareerInk Landing Page](docs/screenshot.png)
+
+---
+
 ## Overview
 
 CareerInk is a 2-agent AI system that helps IT professionals navigate internal career transitions through personalized assessment and career path discovery.
-
-**Live Demo:** https://q7fdu7oc.run.complete.dev
 
 ---
 
