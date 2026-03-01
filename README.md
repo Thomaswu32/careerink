@@ -19,6 +19,12 @@
 ### Step 2 — Psychological Assessment (Agent 1)
 ![48-Question Assessment](docs/screenshot_3_assessment.png)
 
+### Step 3 — Career Match Results (Agent 2)
+![Career Cards](docs/screenshot_4_career_cards.png)
+
+### Step 4 — Career Detail Panel
+![Career Detail](docs/screenshot_5_career_detail.png)
+
 ---
 
 ## Overview
