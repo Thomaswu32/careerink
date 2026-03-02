@@ -49,7 +49,7 @@ CareerInk is a 2-agent AI system that helps IT professionals navigate internal c
 - **Backend:** Python 3.12 · FastAPI · ReportLab (PDF)
 - **Frontend:** Vanilla HTML/CSS/JS
 - **AI:** Deploy AI (Claude) for career justification sentences
-- **Data:** 17 pre-extracted IT career profiles (JSON)
+- **Data:** 50 pre-extracted IT career profiles (JSON)
 
 ---
 
@@ -181,5 +181,9 @@ nohup python3 -m uvicorn backend.main:app --host 0.0.0.0 --port 8000 > logs/serv
 - **IT Work Preferences:** Collaboration, Problem-Solving, Leadership Growth, Dynamic Environment (10 questions)
 
 ---
+
+## 🏆 Hackathon Submission
+
+**[CareerInk — Complete AI Agent Hackathon Submission](https://lablab.ai/ai-hackathons/complete-ai-agent-hackathon/jobonauts/careerink-ai-powered-it-career-transition-platform)**
 
 Built for the **Team Jobonauts AI Hackathon** · 2026
